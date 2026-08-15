@@ -1,0 +1,177 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    // letter-spacing: var(--font-spacing);
+}
+
+
+html {
+    scroll-behavior: smooth;
+    // scroll-padding-top: var(--scroll-top);
+    font-size: var(--font-size);
+
+    &.is-busy,
+    &.is-busy * {
+        cursor: wait !important;
+        pointer-events: none !important;
+    }
+
+    &.is-working,
+    &.is-working * {
+        cursor: progress !important;
+        pointer-events: none !important;
+    }
+}
+
+
+body {
+    position: relative;
+    color: var(--color-fg);
+    // // background-color: var(--color-bg);
+    overflow-x: hidden;
+    // padding-top: var(--scroll-top);
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    max-width: 100%;
+
+	background-color: var(--color-bg);
+
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+
+    background-color: var(--color-bg);
+    padding-bottom: 0.5rem;
+    nav {
+
+        display: flex;
+        padding: 0rem 0.5rem;
+
+        gap: 1rem;
+
+        & > *:nth-child(2) {
+            margin-left: auto;
+        }
+
+        & > a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: var(--color-fg);
+            font-weight: 500;
+            height: 2rem;
+            background-image: linear-gradient(to bottom, var(--color-a-hover), var(--color-a-hover));
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-size: 100% 0rem;
+            display: inline-flex;
+            align-items: flex-end;;
+
+            &:hover {
+                background-size: 100% 0.5rem;
+                color: var(--color-a-hover);
+            }
+
+            html[data-page="accueil"] &[data-page="accueil"] {
+                background-image: linear-gradient(to bottom, var(--color-a-active), var(--color-a-active));
+                background-size: 100% 0.5rem;
+                color: var(--color-a-active);
+            }
+
+
+        }
+
+    }
+
+
+}
+
+
+main {
+    flex-grow: 1;
+
+    section {
+
+        &.splash-accueil {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            height: 100vh;
+            // background-color: red;
+            background-image: var(--spash-accueil);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 80% 80%;
+
+            &::after {
+                content: "";
+                position: absolute;
+                max-width: 65%;
+                max-height: 65%;
+                width: 100%;
+
+                aspect-ratio: 1553 / 705;
+                background-image: var(--spash-accueil-text);
+                background-repeat: no-repeat;
+                background-size: contain;
+                z-index: 1;
+                // background-color: blue;
+            }
+
+        }
+
+        &.slideshow-accueil {
+            background-image: url(../images/accueil-slideshow/immeuble_quartier.webp);
+            aspect-ratio: 3 / 2;
+            width: 100%;
+        }
+
+
+                &.qui-sommes-nous-accueil {
+                    // width: 100%
+                    position: relative;
+        
+                    background-color: var(--color-green);
+                    color: var(--color-yellow);
+                    padding: 4rem 20%;
+                    
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 0%;
+                        top: 50%;
+                        transform: translate(-75%, -50%);
+                        aspect-ratio: 1 / 1;
+                        height: 80%;
+                        border-radius: 50%;
+                        background: #f0a020;
+                    }
+        
+        
+                }
+
+
+    }
+
+
+}
+
+
+h2 {
+    font-family: var(--font-title);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+p:not(:last-child) {
+    margin-bottom: 0.8rem;
+}

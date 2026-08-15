@@ -1,0 +1,35 @@
+kirigami:
+  project: Humain Humain
+  baseurl: https://humainhumain.github.io
+  # banner:  scripts/banner.txt
+  root:    src
+  
+
+export:
+  path: dist
+
+
+# prepros:
+  # before: _templates/header.php
+  # after:  _templates/footer.php
+  # mountext: [.webp, .jpeg]
+  # network: true
+  # deep: true
+  # format: true
+  # includes:
+    # - _plugins/md.plugins.php
+
+
+tasks:
+
+  # - name:  js-core
+  #   type:  js
+  #   entry: scripts/mei.core.js
+
+  - name:  scss-core
+    type:  scss
+    entry: styles/hh.core.scss
+
+  # - name:  conf-game
+  #   type:  conf
+  #   entry: game/config.yaml
