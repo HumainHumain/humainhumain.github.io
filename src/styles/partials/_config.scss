@@ -1,11 +1,19 @@
 $color-fg: #383336;
 $color-bg: #c7a670;
 
-$color-a-hover: #fc5933;
-$color-a-active: #ffffff;
+
+$color-white: #ffffff;
+$color-grey: #383336;
+$color-blue: #29b3b8;
 
 $color-green: #213821;
 $color-yellow: #fca61c;
+$color-orange: #fc5933;
+
+
+
+$color-a-hover: $color-orange;
+$color-a-active: $color-white;
 
 
 $font-family:  'Inter';

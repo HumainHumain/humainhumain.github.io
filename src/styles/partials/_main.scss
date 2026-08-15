@@ -130,33 +130,111 @@ main {
 
         &.slideshow-accueil {
             background-image: url(../images/accueil-slideshow/immeuble_quartier.webp);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
             aspect-ratio: 3 / 2;
             width: 100%;
         }
 
+        &.qui-sommes-nous-accueil {
+            // width: 100%
+            position: relative;
 
-                &.qui-sommes-nous-accueil {
-                    // width: 100%
-                    position: relative;
-        
-                    background-color: var(--color-green);
-                    color: var(--color-yellow);
-                    padding: 4rem 20%;
-                    
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        left: 0%;
-                        top: 50%;
-                        transform: translate(-75%, -50%);
-                        aspect-ratio: 1 / 1;
-                        height: 80%;
-                        border-radius: 50%;
-                        background: #f0a020;
-                    }
-        
-        
-                }
+            background-color: var(--color-green);
+            color: var(--color-yellow);
+            padding: 4rem 20%;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0%;
+                top: 50%;
+                transform: translate(-75%, -50%);
+                aspect-ratio: 1 / 1;
+                height: 70%;
+                border-radius: 50%;
+                background: #f0a020;
+            }
+
+
+        }
+
+
+        &.qu-est-ce-que-l-ethnographie-accueil {
+            position: relative;
+            background-color: var(--color-grey);
+            color: var(--color-white);
+            padding: 4rem 20% 4rem 10%;
+
+            &::before {
+                content: "";
+                position: absolute;
+                right: 0%;
+                top: 50%;
+                transform: translate(75%, -50%);
+                aspect-ratio: 1 / 1;
+                height: 70%;
+                border-radius: 50%;
+                background: var(--color-orange);
+            }
+
+
+        }
+
+
+
+        &.quote {
+            position: relative;
+            background-color: var(--color-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem;
+
+            & > div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 1rem;
+
+                background-color: var(--color-grey);
+
+                color: var(--color-white);
+                border-radius: 50%;
+                aspect-ratio: 1 / 1;
+            }
+
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                aspect-ratio: 1 / 2;
+                height: 80%;
+                // border-radius: 50%;
+                // background: #f0a020;
+                background-image: var(--demi-sphere);
+
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                right: 0%;
+                top: 50%;
+                transform: translate(50%, -50%) scaleX(-1);
+                aspect-ratio: 1 / 2;
+                height: 80%;
+                // border-radius: 50%;
+                // background: #f0a020;
+                background-image: var(--demi-sphere);
+
+            }
+
+        }
 
 
     }
