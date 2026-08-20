@@ -1,0 +1,21 @@
+section.splash-collaborations {
+
+	// background-color: red;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 100vh;
+	// background-color: red;
+	background-image: var(--splash-collaborations);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80% 80%;
+
+	font-family: var(--font-hero);
+	font-size: 5rem;
+	color: var(--color-white);
+	text-transform: uppercase;
+
+}

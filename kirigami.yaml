@@ -9,13 +9,13 @@ export:
   path: dist
 
 
-# prepros:
-  # before: _templates/header.php
-  # after:  _templates/footer.php
+prepros:
+  before: _layouts/header.php
+  after:  _layouts/footer.php
   # mountext: [.webp, .jpeg]
   # network: true
-  # deep: true
-  # format: true
+  deep: true
+  format: true
   # includes:
     # - _plugins/md.plugins.php
 

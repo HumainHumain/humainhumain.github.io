@@ -79,7 +79,12 @@ header {
                 color: var(--color-a-hover);
             }
 
-            html[data-page="accueil"] &[data-page="accueil"] {
+            html[data-page="accueil"] &[data-page="accueil"],
+            html[data-page="expertise"] &[data-page="expertise"],
+            html[data-page="services"] &[data-page="services"],
+            html[data-page="publications"] &[data-page="publications"],
+            html[data-page="collaborations"] &[data-page="collaborations"],
+            html[data-page="nousjoindre"] &[data-page="nousjoindre"] {
                 background-image: linear-gradient(to bottom, var(--color-a-active), var(--color-a-active));
                 background-size: 100% 0.5rem;
                 color: var(--color-a-active);
@@ -98,6 +103,8 @@ main {
     flex-grow: 1;
 
     section {
+
+        overflow-x: hidden;
 
         &.splash-accueil {
             display: flex;
@@ -252,4 +259,31 @@ h2 {
 
 p:not(:last-child) {
     margin-bottom: 0.8rem;
+}
+
+
+footer {
+    // background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+    height: 5em;
+    margin: 5em 0;
+    user-select: none;
+    // filter: grayscale(100);
+    color: var(--color-white);
+    z-index: -1;
+
+    &::before {
+        content: '';
+        height: 2em;
+        aspect-ratio: 132/150;
+        background-image: var(--logo-ii);
+        background-size: contain;
+        background-position: left center;
+        background-repeat: no-repeat;
+        margin-right: 0.5em;
+    }
 }
