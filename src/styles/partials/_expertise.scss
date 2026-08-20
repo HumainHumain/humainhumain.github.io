@@ -19,3 +19,129 @@ section.splash-expertise {
 	text-transform: uppercase;
 
 }
+
+
+
+.expertise-index {
+	background-color: var(--color-grey);
+	color: var(--color-white);
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5rem;
+
+	justify-items: center;
+	// align-items: center;
+	padding: 4rem;
+
+
+	& > div {
+		// background-color: red;
+		width: 11rem;
+		// height: 3rem;
+		display: flex;
+		// justify-content: top;
+		justify-content: flex-start;
+		flex-direction: column;
+
+		& > div:first-child {
+			// vertical-align: top;
+			align-self: flex-start;
+			border-radius: 50%;
+			width: 100%;
+			aspect-ratio: 1 / 1;
+			background-color: green;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border: 0.5rem solid var(--color-blue);
+		}
+
+		& > div:last-child {
+			text-align: center;
+			font-weight: 600;
+			margin-top: 0.5rem;
+
+		}
+
+
+		&.anticiper > div:first-child {
+			background-image: url(../images/expertise/01-anticiper.webp);
+		}
+
+		&.saisir > div:first-child {
+			background-image: url(../images/expertise/02-saisir.webp);
+		}
+
+		&.creer > div:first-child {
+			background-image: url(../images/expertise/03-creer.webp);
+		}
+
+		&.rester > div:first-child {
+			background-image: url(../images/expertise/04-rester.webp);
+		}
+
+		&.perspectives > div:first-child {
+			background-image: url(../images/expertise/05-perspectives.webp);
+		}
+
+		&.inclusion > div:first-child {
+			background-image: url(../images/expertise/06-inclusion.webp);
+		}
+
+
+	}
+
+
+
+}
+
+
+
+.expertise-section {
+
+	overflow-x: hidden;
+	position: relative;
+
+	background-color: var(--color-white);
+	color: var(--color-black);
+	padding: 4rem 20%;
+
+
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0%;
+		top: 50%;
+		transform: translate(-75%, -50%);
+		aspect-ratio: 1 / 1;
+		height: 70%;
+		border-radius: 50%;
+		background: var(--color-yellow);
+	}
+
+
+}
+
+
+.expertise-section-right {
+	overflow-x: hidden;
+	position: relative;
+
+	background-color: var(--color-white);
+	color: var(--color-black);
+	padding: 4rem 20% 4rem 10%;
+
+	&::before {
+		content: "";
+		position: absolute;
+		right: 0%;
+		top: 50%;
+		transform: translate(75%, -50%);
+		aspect-ratio: 1 / 1;
+		height: 70%;
+		border-radius: 50%;
+		background: var(--color-yellow);
+	}
+
+}
