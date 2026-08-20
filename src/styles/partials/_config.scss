@@ -1,15 +1,21 @@
+@use "utils" as *;
+
 $color-fg: #383336;
 $color-bg: #c7a670;
 
 
-$color-white: #ffffff;
-$color-grey: #383336;
-$color-blue: #29b3b8;
-
-$color-green: #213821;
+$color-white:  #ffffff;
+$color-grey:   #383336;
+$color-blue:   #29b3b8;
+$color-green:  #213821;
 $color-yellow: #fca61c;
 $color-orange: #fc5933;
 
+
+$color-blue-bin:   hexbin($color-blue);
+$color-grey-bin:   hexbin($color-grey);
+$color-yellow-bin: hexbin($color-yellow);
+$color-orange-bin: hexbin($color-orange);
 
 
 $color-a-hover: $color-orange;
@@ -18,6 +24,7 @@ $color-a-active: $color-white;
 
 $font-family:  'Inter';
 $font-title:   'EB Garamond';
+$font-hero:    'Nazare';
 // $font-spacing: -0.07em;
 
 $font-base:   26;
