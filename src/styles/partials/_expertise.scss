@@ -153,9 +153,9 @@ section.splash-expertise {
 
 	}
 
-	&:nth-child(3)::before { background-image: url(../images/expertise/01-anticiper.webp); }
-	&:nth-child(5)::before { background-image: url(../images/expertise/03-creer.webp); }
-	&:nth-child(7)::before { background-image: url(../images/expertise/05-perspectives.webp); }
+	&:nth-child(4)::before { background-image: url(../images/expertise/01-anticiper.webp); }
+	&:nth-child(6)::before { background-image: url(../images/expertise/03-creer.webp); }
+	&:nth-child(8)::before { background-image: url(../images/expertise/05-perspectives.webp); }
 
 }
 
@@ -185,9 +185,9 @@ section.splash-expertise {
 		background-size: cover;
 	}
 
-	&:nth-child(4)::before { background-image: url(../images/expertise/02-saisir.webp); }
-	&:nth-child(6)::before { background-image: url(../images/expertise/04-rester.webp); }
-	&:nth-child(8)::before { background-image: url(../images/expertise/06-inclusion.webp); }
+	&:nth-child(5)::before { background-image: url(../images/expertise/02-saisir.webp); }
+	&:nth-child(7)::before { background-image: url(../images/expertise/04-rester.webp); }
+	&:nth-child(9)::before { background-image: url(../images/expertise/06-inclusion.webp); }
 }
 
 
