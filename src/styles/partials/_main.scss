@@ -315,6 +315,12 @@ footer {
         background-repeat: no-repeat;
         background-image: var(--arrow-up);
 
+        transition-property: transform;
+        transition-duration: 100ms;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     // background-color: red;
