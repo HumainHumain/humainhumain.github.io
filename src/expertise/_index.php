@@ -7,6 +7,8 @@
 
 <section class="splash-expertise">Expertise</section>
 
+<section class="expertise-slideshow"></section>
+
 <section class="expertise-index" id="expertise">
 
 	<div class="anticiper" onclick="document.location.href='#anticiper'">
