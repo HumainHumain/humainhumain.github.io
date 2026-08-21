@@ -294,3 +294,34 @@ footer {
         margin-right: 0.5em;
     }
 }
+
+
+.arrowup {
+    position: relative;
+    height: 1.2rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > div {
+        position: relative;
+        // background-color: blue;
+        height: 100%;
+        aspect-ratio: 2 / 1;
+        cursor: pointer;
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: var(--arrow-up);
+
+    }
+
+    // background-color: red;
+
+    
+
+
+
+
+}
