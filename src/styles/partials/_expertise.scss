@@ -189,3 +189,14 @@ section.splash-expertise {
 	&:nth-child(6)::before { background-image: url(../images/expertise/04-rester.webp); }
 	&:nth-child(8)::before { background-image: url(../images/expertise/06-inclusion.webp); }
 }
+
+
+
+.expertise-slideshow {
+	background-image: url(../images/expertise/00-spash.webp);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+}
