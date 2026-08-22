@@ -19,3 +19,187 @@ section.splash-services {
 	text-transform: uppercase;
 
 }
+
+
+.services-slideshow {
+	background-image: url(../images/services/00-splash.webp);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+}
+
+
+
+
+
+.services-index {
+	background-color: var(--color-grey);
+	color: var(--color-white);
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+
+	justify-items: center;
+	// align-items: center;
+	padding: 4rem;
+
+
+	& > div {
+		// background-color: red;
+		width: 11rem;
+		// height: 3rem;
+		display: flex;
+		// justify-content: top;
+		justify-content: flex-start;
+		flex-direction: column;
+
+
+
+		&:hover {
+			cursor: pointer;
+			& > div:first-child {
+			
+				// border-color: var(--color-yellow);
+				border: 0.75rem solid var(--color-blue);
+				
+			}
+
+			& > div:last-child {
+				text-decoration: underline;
+			}
+
+			
+		}
+
+
+		& > div:first-child {
+
+			transition-property: border;
+			transition-duration: 100ms;
+
+			// vertical-align: top;
+			align-self: flex-start;
+			border-radius: 50%;
+			width: 100%;
+			aspect-ratio: 1 / 1;
+			// background-color: green;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border: 0.5rem solid var(--color-orange);
+
+
+
+		}
+
+		& > div:last-child {
+			text-align: center;
+			font-weight: 600;
+			margin-top: 0.5rem;
+
+		}
+
+
+		&.portraits > div:first-child {
+			background-image: url(../images/services/01-portraits.webp);
+		}
+
+		&.architecture > div:first-child {
+			background-image: url(../images/services/02-architecture.webp);
+		}
+
+		&.placemaking > div:first-child {
+			background-image: url(../images/services/03-placemaking.webp);
+		}
+
+		&.innovation > div:first-child {
+			background-image: url(../images/services/04-innovation.webp);
+		}
+
+		&.numerique > div:first-child {
+			background-image: url(../images/services/05-numerique.webp);
+		}
+
+		&.technologies > div:first-child {
+			background-image: url(../images/services/06-technologies.webp);
+		}
+
+
+	}
+
+
+
+}
+
+
+
+
+
+.services-section {
+
+	overflow-x: hidden;
+	position: relative;
+
+	background-color: var(--color-white);
+	color: var(--color-black);
+	padding: 4rem 20%;
+
+
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0%;
+		top: 50%;
+		transform: translate(-75%, -50%);
+		aspect-ratio: 1 / 1;
+		height: 70%;
+		border-radius: 50%;
+		// background-color: var(--color-yellow);
+		box-sizing: border-box;
+		border: 0.5rem solid var(--color-blue);
+		
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+
+	}
+
+	&:nth-child(4)::before { background-image: url(../images/services/01-portraits.webp); }
+	&:nth-child(6)::before { background-image: url(../images/services/03-placemaking.webp); }
+	&:nth-child(8)::before { background-image: url(../images/services/05-numerique.webp); }
+
+}
+
+
+.services-section-right {
+	overflow-x: hidden;
+	position: relative;
+
+	background-color: var(--color-white);
+	color: var(--color-black);
+	padding: 4rem 20% 4rem 10%;
+
+	&::before {
+		content: "";
+		position: absolute;
+		right: 0%;
+		top: 50%;
+		transform: translate(75%, -50%);
+		aspect-ratio: 1 / 1;
+		height: 70%;
+		border-radius: 50%;
+		box-sizing: border-box;
+		border: 0.5rem solid var(--color-blue);
+		
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+	}
+
+	&:nth-child(5)::before { background-image: url(../images/services/02-architecture.webp); }
+	&:nth-child(7)::before { background-image: url(../images/services/04-innovation.webp); }
+	&:nth-child(9)::before { background-image: url(../images/services/06-technologies.webp); }
+}
