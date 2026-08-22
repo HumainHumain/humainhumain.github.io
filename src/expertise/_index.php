@@ -10,7 +10,6 @@
 <section class="expertise-slideshow"></section>
 
 <section class="expertise-index" id="expertise">
-
 	<div class="anticiper" onclick="document.location.href='#anticiper'">
 		<div></div>
 		<div>Anticiper les défis et faire émerger les scénarios alternatifs</div>
@@ -35,8 +34,6 @@
 		<div></div>
 		<div>Inclusion des personnes difficiles d’accès</div>
 	</div>
-
-
 </section>
 
 
