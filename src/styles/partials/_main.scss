@@ -226,6 +226,9 @@ main {
                 // border-radius: 50%;
                 // background: #f0a020;
                 background-image: var(--demi-sphere);
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: contain;
 
             }
             &::after {
@@ -236,10 +239,10 @@ main {
                 transform: translate(50%, -50%) scaleX(-1);
                 aspect-ratio: 1 / 2;
                 height: 80%;
-                // border-radius: 50%;
-                // background: #f0a020;
                 background-image: var(--demi-sphere);
-
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: contain;
             }
 
         }
