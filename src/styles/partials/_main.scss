@@ -72,7 +72,8 @@ header {
             background-repeat: no-repeat;
             background-size: 100% 0rem;
             display: inline-flex;
-            align-items: flex-end;;
+            align-items: flex-end;
+            white-space: nowrap;
 
             &:hover {
                 background-size: 100% 0.5rem;

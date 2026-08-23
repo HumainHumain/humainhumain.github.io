@@ -1,7 +1,10 @@
 <?php
 /**
- * @id    services
- * @title Services
+ * @id           services
+ * @title        Services
+ * @portraits    _data/01-portraits.md
+ * @architecture _data/02-architecture.md
+ * @placemaking  _data/03-placemaking.md
  */
 ?>
 
@@ -38,35 +41,18 @@
 	</div>
 </section>
 
-
-
-
 <section class="services-section" id="portraits">
-	<h3>Portraits sociaux</h3>
-	<p><strong>Vous tentez de dénouer des crises ou d’anticiper des transformations majeures dans votre secteur d’activité ?</strong></p>
-	<p><strong>Vous souhaitez compléter vos portraits statistiques avec des données sur le vécu et les expériences des gens ?</strong></p>
-	<p>Les informations issues d’une ethnographie permettent d’aborder des enjeux cruciaux en récoltant des informations principalement axées sur l’expérience humaine.</p>
-	<p>Notre travail s’insère en complémentarité avec vos démarches de planification stratégique ou de documentation statistique et se concentre sur les dimensions sociales et culturelles de votre public cible.</p>
+	<?php echo $portraits; ?>
 	<div class="arrowup"><div title="Remonter" onclick="document.location.href='#services'"></div></div>
 </section>
-
-
 
 <section class="services-section-right" id="architecture">
-	<h3>Architecture & urbanisme</h3>
-	<p><strong>L’ethnographie peut jouer le rôle d’une préconsultation en amont d’un projet de conception.</strong></p>
-	<p><strong>Elle agit comme outil d’investigation des pratiques humaines pour les équipes d’architectes et d’ingénieur.e.s et comme vecteur d’inclusion sociale en créant du lien social sur le terrain.</strong></p>
-	<p>Cette proximité avec les collectivités locales permet de faire des recommandations et des propositions qui s’enracinent directement dans leur réalité.</p>
-	<p>Nous agissons à titre de « traducteurs.trices » en identifiant les habitudes des usager.ère.s, en y repérant les besoins explicites et implicites, inconscients ou non formulés. Nous nous intéressons aux usages réels ou potentiels ainsi qu’aux motivations et aux freins à l’appropriation des espaces.</p>
+	<?php echo $architecture; ?>
 	<div class="arrowup"><div title="Remonter" onclick="document.location.href='#services'"></div></div>
 </section>
 
-
 <section class="services-section" id="placemaking">
-	<h3>Placemaking & évènementiel</h3>
-	<p><strong>Un processus de placemaking efficace doit impliquer les collectivités au tout début afin de définir les priorités et la vision du projet, mais aussi les maintenir impliquées tout au long de la mise en œuvre et au-delà.</strong></p>
-	<p>Une immersion ethnographique amène une meilleure connaissance des besoins, des possibles blocages et leviers.</p>
-	<p>Les solutions apportées en terme de conception de services, d’espaces, de stratégies de communication feront ainsi directement écho à la réalité des gens à qui vous vous adressez.</p>
+	<?php echo $placemaking; ?>
 	<div class="arrowup"><div title="Remonter" onclick="document.location.href='#services'"></div></div>
 </section>
 

@@ -1,0 +1,55 @@
+- name: Arpent
+  image: arpent.svg
+  url: https://www.larpent.ca/
+
+- name: Microclimat
+  image: microclimat.svg
+  url: https://www.microclimat.ca/fr/
+
+- name: Enclume
+  image: enclume.svg
+  url: https://enclume.ca/
+
+- name: Fonds des médias du Canada
+  image: fonds-des-medias-du-canada.svg
+  url: https://cmf-fmc.ca/fr/futur-et-medias/articles/le-contenu-canadien-vu-par-la-science-de-lobservation/
+
+- name: La Société des demains
+  image: demains.svg
+  url: https://demains.co/
+
+- name: Équiterre
+  image: equiterre.svg
+  url: https://www.equiterre.org/fr/initiatives/obsolescence-et-acces-a-la-reparation
+
+- name: Village Montréal
+  image: village.svg
+  url: https://www.villagemontreal.ca/communaute/%C3%A9tude-ethnographique-un-village-en-qu%C3%AAte
+
+- name: Parcs Canada
+  image: parks-canada.svg
+  url: https://parcs.canada.ca/lhn-nhs/pe/provincehouse
+
+- name: Architecture sans frontières Québec
+  image: asfq.svg
+  url: https://www.asf-quebec.org/
+
+- name: CDC Centre-Sud
+  image: cdc-centre-sud.svg
+  url: http://www.cdccentresud.org/
+
+- name: CJE du Sud-Ouest
+  image: carrefour.svg
+  url: https://www.cjeso-mtl.org/
+
+- name: Office de l’Éclectisme Urbain et Fonctionnel
+  image: loeuf-architech.svg
+  url: https://www.c40reinventingcities.org/en/professionals/winning-projects/de-la-commune-service-yard-1309.html
+
+- name: Cabico
+  image: cabico.svg
+  url: https://cabico.com/fr/
+
+- name: Centre des sciences de Montréal
+  image: centre-des-sciences-de-montreal.svg
+  url: https://www.clc-sic.ca/francais/salle-de-presse/vivez-une-experience-de-diversite-dinclusion-et-dexploration-infinie-avec-mini

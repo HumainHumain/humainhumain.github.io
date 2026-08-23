@@ -14,8 +14,53 @@ section.splash-collaborations {
 	background-size: 80% 80%;
 
 	font-family: var(--font-hero);
-	font-size: 4.5rem;
+	font-size: 4rem;
 	color: var(--color-white);
 	text-transform: uppercase;
+
+}
+
+
+
+.collaborations-slideshow {
+	background-image: url(../images/collaborations/00-splash.webp);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+}
+
+
+.collaborations-index {
+	background-color: var(--color-white);
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 3rem;
+	padding: 3rem;
+	width: 100%;
+	height: 100%;
+
+
+	& > a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		aspect-ratio: 1 / 1;
+		
+		transition-property: transform;
+		transition-duration: 100ms;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+
+		img {
+			aspect-ratio: 1 / 1;
+			object-fit: contain;
+		}
+
+	}
+
 
 }
