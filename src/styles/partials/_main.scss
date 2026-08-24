@@ -332,31 +332,97 @@ blockquote {
 }
 
 
+
 footer {
-    // background-color: red;
+
+
+    & > div:nth-child(1) {
+        // background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        user-select: none;
+        // filter: grayscale(100);
+        color: var(--color-white);
+        z-index: -1;
+
+        &::before {
+            content: '';
+            height: 2em;
+            aspect-ratio: 132/150;
+            background-image: var(--logo-ii);
+            background-size: contain;
+            background-position: left center;
+            background-repeat: no-repeat;
+            margin-right: 0.5em;
+        }
+    }
+
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+
     font-size: 0.8rem;
     font-weight: 500;
     height: 5em;
     margin: 5em 0;
-    user-select: none;
-    // filter: grayscale(100);
-    color: var(--color-white);
-    z-index: -1;
 
-    &::before {
-        content: '';
-        height: 2em;
-        aspect-ratio: 132/150;
-        background-image: var(--logo-ii);
-        background-size: contain;
-        background-position: left center;
-        background-repeat: no-repeat;
-        margin-right: 0.5em;
+    & > div:nth-child(2) {
+        margin-top: 1rem;
+        // background-color: blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        .facebook {
+            width: 1rem;
+            aspect-ratio: 1 / 1;
+            // background-color: red;
+            background-image: var(--icon-facebook);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+        }
+
+        .email {
+            width: 1rem;
+            aspect-ratio: 1 / 1;
+            // background-color: red;
+            background-image: var(--icon-email);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+        }
+
     }
+
 }
+
+
+// footer > div:nth-child(1) {
+//     // background-color: red;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     user-select: none;
+//     // filter: grayscale(100);
+//     color: var(--color-white);
+//     z-index: -1;
+
+//     &::before {
+//         content: '';
+//         height: 2em;
+//         aspect-ratio: 132/150;
+//         background-image: var(--logo-ii);
+//         background-size: contain;
+//         background-position: left center;
+//         background-repeat: no-repeat;
+//         margin-right: 0.5em;
+//     }
+// }
 
 
 .arrowup {
