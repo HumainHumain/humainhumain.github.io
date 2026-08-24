@@ -12,7 +12,7 @@
         <link rel="icon" type="image/x-icon" href="<?php echo $relroot; ?>favicon.ico">
         <link rel="stylesheet" href="<?php echo $relroot; ?>styles/hh.core.min.css?###TIMESTAMP###">
         <!-- <script src="./scripts/hh.core.min.js?###TIMESTAMP###"></script> -->
-        <title>Humain Humain</title>
+        <title>Humain Humain | <?php echo $title; ?></title>
 </head>
 <body>
 	<header>
