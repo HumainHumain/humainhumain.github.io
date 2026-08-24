@@ -1,8 +1,8 @@
 <?php
 /**
- * @id    collaborations
- * @title Collaborations
- * @collaborations _data/collaborations.yaml
+ * @id             collaborations
+ * @title          Collaborations
+ * @collaborations ../_data/collaborations/collaborations.yaml
  */
 ?>
 

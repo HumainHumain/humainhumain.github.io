@@ -117,7 +117,8 @@ main {
             background-image: var(--spash-accueil);
             background-repeat: no-repeat;
             background-position: center;
-            background-size: 80% 80%;
+            background-size: 75% 75%;
+            // margin-top: 1rem;
 
             &::after {
                 content: "";
@@ -137,7 +138,7 @@ main {
         }
 
         &.slideshow-accueil {
-            background-image: url(../images/accueil-slideshow/immeuble_quartier.webp);
+            background-image: url(../images/accueil/slideshow/immeuble_quartier.webp);
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
@@ -151,7 +152,7 @@ main {
 
             background-color: var(--color-green);
             color: var(--color-yellow);
-            padding: 4rem 20%;
+            padding: 4rem 5% 4rem 20%;
 
             &::before {
                 content: "";
@@ -162,10 +163,19 @@ main {
                 aspect-ratio: 1 / 1;
                 height: 70%;
                 border-radius: 50%;
-                background: #f0a020;
+                background: var(--color-yellow);
+                max-height: 30rem;
             }
 
-
+            img {
+                width: 8rem;
+                border-radius: 50%;
+                border: 0.5rem solid var(--color-yellow);
+                margin-top: 1rem;
+                &:not(:last-of-type) {
+                    margin-right: 2.5rem;
+                }
+            }
         }
 
 
@@ -173,7 +183,7 @@ main {
             position: relative;
             background-color: var(--color-grey);
             color: var(--color-white);
-            padding: 4rem 20% 4rem 10%;
+            padding: 4rem 20% 4rem 5%;
 
             &::before {
                 content: "";
@@ -185,10 +195,48 @@ main {
                 height: 70%;
                 border-radius: 50%;
                 background: var(--color-orange);
+                max-height: 30rem;
             }
 
 
         }
+
+
+
+
+        &.approche {
+            // width: 100%
+            position: relative;
+
+            background-color: var(--color-white);
+            color: var(--color-grey);
+            padding: 4rem 5% 4rem 20%;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0%;
+                top: 50%;
+                transform: translate(-75%, -50%);
+                aspect-ratio: 1 / 1;
+                height: 70%;
+                border-radius: 50%;
+                background: var(--color-blue);
+                max-height: 30rem;
+            }
+
+            img {
+                width: 8rem;
+                border-radius: 50%;
+                border: 0.5rem solid var(--color-yellow);
+                margin-top: 1rem;
+                &:not(:last-of-type) {
+                    margin-right: 2.5rem;
+                }
+            }
+        }
+
+
 
 
 
@@ -270,6 +318,17 @@ h3 {
 
 p:not(:last-child) {
     margin-bottom: 0.8rem;
+}
+
+em {
+    color: var(--color-orange);
+}
+
+blockquote {
+    font-size: 1.3em;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--color-orange);
 }
 
 

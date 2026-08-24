@@ -14,7 +14,7 @@ prepros:
   after:  _layouts/footer.php
   # mountext: [.webp, .jpeg]
   # network: true
-  deep: true
+  # deep: true
   format: true
   # includes:
     # - _plugins/md.plugins.php
@@ -29,7 +29,3 @@ tasks:
   - name:  scss-core
     type:  scss
     entry: styles/hh.core.scss
-
-  # - name:  conf-game
-  #   type:  conf
-  #   entry: game/config.yaml
