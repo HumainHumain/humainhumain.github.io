@@ -316,6 +316,18 @@ h3 {
     margin-bottom: 1rem;
 }
 
+h4 {
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+h5 {
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
 
 p:not(:last-child) {
     margin-bottom: 0.8rem;
@@ -326,13 +338,19 @@ em {
 }
 
 blockquote {
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: 600;
     font-style: italic;
     color: var(--color-orange);
 }
 
-
+hr {
+	border: none;
+	height: 0.2em;
+	background: var(--color-blue);
+    margin-bottom: 1rem;
+	width: 100%;
+}
 
 footer {
 
