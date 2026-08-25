@@ -8,4 +8,3 @@ Les outils de l’ethnographe sur le terrain sont tirés des sciences sociales e
 
 > «Maybe stories are just data with a soul.»  
 > — Brené Brown
-	

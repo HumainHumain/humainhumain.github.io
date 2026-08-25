@@ -1,7 +1,7 @@
 kirigami:
   project: Humain Humain
   baseurl: https://humainhumain.github.io
-  # banner:  scripts/banner.txt
+  banner:  assets/banner.txt
   root:    src
   
 
