@@ -2,11 +2,11 @@
 
 ## Général
 - [ ] Faire formulaire infolettre
-- [X] Créer banner
 - [ ] Ajouter des collaborations
+- [X] Créer banner
 
 ## SEO
-- [ ] Faire les images OG
+- [X] Faire les images OG
 - [ ] Faire les headers OG
 - [ ] Ajouter les metas (voir sceptiques)
 - [ ] Ajouter un json+ld

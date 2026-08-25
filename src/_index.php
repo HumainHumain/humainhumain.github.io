@@ -2,6 +2,8 @@
 /**
  * @id           accueil
  * @title        Accueil
+ * @ogimage      images/accueil/ogdefault.webp
+ * 
  * @apropos      _data/accueil/a-propos.md
  * @ethnographie _data/accueil/ethnographie.md
  * @citation     _data/accueil/citation.md
