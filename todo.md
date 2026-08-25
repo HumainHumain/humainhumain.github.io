@@ -2,8 +2,11 @@
 
 ## Général
 - [ ] Faire formulaire infolettre
-- [ ] Ajouter des collaborations
+- [X] Ajouter des collaborations
 - [X] Créer banner
+- [ ] Burger
+- [ ] Éricture inclusive
+- [ ] Crédit footer
 
 ## SEO
 - [X] Faire les images OG

@@ -355,13 +355,25 @@ hr {
 footer {
 
 
+
+
+    display: flex;
+    flex-direction: column;
+
+    font-size: 0.8rem;
+    font-weight: 500;
+    height: 5em;
+    margin: 5em 0;
+
+
+
     & > div:nth-child(1) {
         // background-color: red;
         display: flex;
         justify-content: center;
         align-items: center;
 
-        user-select: none;
+        // user-select: none;
         // filter: grayscale(100);
         color: var(--color-white);
         z-index: -1;
@@ -379,16 +391,29 @@ footer {
     }
 
 
-    display: flex;
-    flex-direction: column;
 
-    font-size: 0.8rem;
-    font-weight: 500;
-    height: 5em;
-    margin: 5em 0;
 
     & > div:nth-child(2) {
-        margin-top: 1rem;
+        // background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        // user-select: none;
+        // filter: grayscale(100);
+        color: var(--color-white);
+        // z-index: -1;
+        margin-top: 0.5rem;
+
+        a {
+            color: var(--color-white);
+        }
+
+    }
+
+
+    & > div:nth-child(3) {
+        margin-top: 0.5rem;
         // background-color: blue;
         display: flex;
         align-items: center;
