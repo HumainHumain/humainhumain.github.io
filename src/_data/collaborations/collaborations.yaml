@@ -1,3 +1,31 @@
+- name: Ville de Montréal
+  image: ville-montreal.svg
+  url: https://montreal.ca/
+
+- name: Ministère de la Culture et des Communications
+  image: ccq.svg
+  url: https://www.quebec.ca/gouvernement/ministeres-organismes/culture-communications
+
+- name: Ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs
+  image: melccpp.svg
+  url: https://www.environnement.gouv.qc.ca/
+
+- name: Danse Trad Québec
+  image: dtq.svg
+  url: https://www.dansetrad.qc.ca/
+
+- name: C40 Cities
+  image: c40-cities.svg
+  url: https://www.c40.org/
+
+- name: Ville-Marie
+  image: ville-marie.svg
+  url: https://montreal.ca/ville-marie
+
+- name: Ville Saint-Laurent
+  image: ville-saint-laurent.svg
+  url: https://montreal.ca/saint-laurent
+
 - name: Arpent
   image: arpent.svg
   url: https://www.larpent.ca/
