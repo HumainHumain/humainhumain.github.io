@@ -168,7 +168,7 @@ section.splash-expertise {
 
 
 	&[data-hover="in"]::before {
-		transform: translate(-25%, -50%);
+		transform: translate(0%, -50%);
 	}
 
 	&::before {
@@ -216,7 +216,7 @@ section.splash-expertise {
 
 
 	&[data-hover="in"]::before {
-		transform: translate(25%, -50%);
+		transform: translate(0%, -50%);
 	}
 
 	&::before {

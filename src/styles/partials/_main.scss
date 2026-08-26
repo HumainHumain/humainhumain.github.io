@@ -2,13 +2,13 @@
 @use 'config' as *;
 
 @property --sphere-offset {
-  syntax: '<percent>';
+  syntax: '<percentage>';
   initial-value: 0;
   inherits: true;
 }
 
 @property --sphere-offset-right {
-  syntax: '<percent>';
+  syntax: '<percentage>';
   initial-value: 0;
   inherits: true;
 }
