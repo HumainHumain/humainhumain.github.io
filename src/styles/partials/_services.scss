@@ -177,6 +177,10 @@ section.splash-services {
 
 .services-section {
 
+	--border-color: var(--color-blue);
+
+	transition: --border-color 100ms;
+
 	overflow-x: hidden;
 	position: relative;
 
@@ -184,7 +188,9 @@ section.splash-services {
 	color: var(--color-black);
 	padding: 4rem 20%;
 
-
+	&[data-hover="in"]::before {
+		transform: translate(0%, -50%);
+	}
 
 	&::before {
 		content: "";
@@ -197,11 +203,14 @@ section.splash-services {
 		border-radius: 50%;
 		// background-color: var(--color-yellow);
 		box-sizing: border-box;
-		border: 0.5rem solid var(--color-blue);
+		border: 0.5rem solid var(--border-color);
+
+		transition: --border-color 100ms ease-in-out, transform 100ms ease-in-out;
 		
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: cover;
+		cursor: pointer;
 
 	}
 
@@ -213,12 +222,21 @@ section.splash-services {
 
 
 .services-section-right {
+
+	--border-color: var(--color-blue);
+
+	transition: --border-color 100ms;
+
 	overflow-x: hidden;
 	position: relative;
 
 	background-color: var(--color-white);
 	color: var(--color-black);
 	padding: 4rem 20% 4rem 10%;
+
+	&[data-hover="in"]::before {
+		transform: translate(0%, -50%);
+	}
 
 	&::before {
 		content: "";
@@ -230,11 +248,14 @@ section.splash-services {
 		height: 70%;
 		border-radius: 50%;
 		box-sizing: border-box;
-		border: 0.5rem solid var(--color-blue);
+		border: 0.5rem solid var(--border-color);
+
+		transition: --border-color 100ms  ease-in-out, transform 100ms ease-in-out;
 		
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: cover;
+		cursor: pointer;
 	}
 
 	&:nth-child(5)::before { background-image: url(../images/services/02-architecture.webp); }

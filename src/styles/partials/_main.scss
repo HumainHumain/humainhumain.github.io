@@ -3,13 +3,13 @@
 
 @property --sphere-offset {
   syntax: '<percentage>';
-  initial-value: 0;
+  initial-value: 0%;
   inherits: true;
 }
 
 @property --sphere-offset-right {
   syntax: '<percentage>';
-  initial-value: 0;
+  initial-value: 0%;
   inherits: true;
 }
 

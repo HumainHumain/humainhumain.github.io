@@ -42,32 +42,32 @@
 	</div>
 </section>
 
-<section class="services-section" id="portraits">
+<section class="services-section" id="portraits" data-hover="out">
 	<?php echo $portraits; ?>
 	<div class="arrowup"><div title="Remonter" onclick="document.location.href='#services'"></div></div>
 </section>
 
-<section class="services-section-right" id="architecture">
+<section class="services-section-right" id="architecture" data-hover="out">
 	<?php echo $architecture; ?>
 	<div class="arrowup"><div title="Remonter" onclick="document.location.href='#services'"></div></div>
 </section>
 
-<section class="services-section" id="placemaking">
+<section class="services-section" id="placemaking" data-hover="out">
 	<?php echo $placemaking; ?>
 	<div class="arrowup"><div title="Remonter" onclick="document.location.href='#services'"></div></div>
 </section>
 
-<section class="services-section-right" id="innovation">
+<section class="services-section-right" id="innovation" data-hover="out">
 	<?php echo $innovation; ?>
 	<div class="arrowup"><div title="Remonter" onclick="document.location.href='#services'"></div></div>
 </section>
 
-<section class="services-section" id="numerique">
+<section class="services-section" id="numerique" data-hover="out">
 	<?php echo $numerique; ?>
 	<div class="arrowup"><div title="Remonter" onclick="document.location.href='#services'"></div></div>
 </section>
 
-<section class="services-section-right" id="technologies">
+<section class="services-section-right" id="technologies" data-hover="out">
 	<?php echo $technologies; ?>
 	<div class="arrowup"><div title="Remonter" onclick="document.location.href='#services'"></div></div>
 </section>
