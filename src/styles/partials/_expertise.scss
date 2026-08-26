@@ -5,7 +5,7 @@ section.splash-expertise {
 	justify-content: center;
 
 	width: 100dvw;
-	height: 100dvh;
+	height: calc(100dvh - var(--scroll-top));
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 80% auto;
