@@ -84,12 +84,14 @@ section.splash-collaborations {
 		justify-content: center;
 		align-items: center;
 		aspect-ratio: 1 / 1;
+		opacity: 0.7;
 		
-		transition-property: transform;
+		transition-property: transform opacity;
 		transition-duration: 100ms;
 
 		&:hover {
 			transform: scale(1.1);
+			opacity: 1;
 		}
 
 		img {
