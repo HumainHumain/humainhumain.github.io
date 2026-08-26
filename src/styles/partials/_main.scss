@@ -28,6 +28,10 @@ html {
     // scroll-padding-top: 2.5rem;
     font-size: var(--font-size);
 
+    // @media (orientation: portrait) {
+    //     font-size: var(--font-size-mobile);
+    // }
+
     &.is-busy,
     &.is-busy * {
         cursor: wait !important;
@@ -209,6 +213,10 @@ main {
             animation-iteration-count: infinite;
             animation-timing-function: ease-in-out;
             animation-delay: -325ms;
+
+            @media (orientation: portrait) {
+                animation-timing-function: steps(1);
+            }
 
             &::after {
                 content: "";

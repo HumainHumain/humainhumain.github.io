@@ -26,6 +26,8 @@ $font-family:  'Inter';
 $font-title:   'EB Garamond';
 $font-hero:    'Nazare';
 
+// $font-mobile: 32;
 $font-base:   26;
 $font-break:  1200;
 $font-resp:   calc($font-base * 100 / $font-break);
+// $font-resp-mobile: calc($font-mobile * 100 / $font-break);

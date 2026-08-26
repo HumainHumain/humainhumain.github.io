@@ -34,6 +34,10 @@ section.splash-nousjoindre {
 	animation-timing-function: ease-in-out;
 	animation-delay: -320ms;
 
+	@media (orientation: portrait) {
+        animation-timing-function: steps(1);
+    }
+
 }
 
 

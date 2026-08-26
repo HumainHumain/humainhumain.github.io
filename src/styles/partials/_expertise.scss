@@ -20,6 +20,10 @@ section.splash-expertise {
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
 	animation-delay: -320ms;
+
+	@media (orientation: portrait) {
+        animation-timing-function: steps(1);
+    }
 }
 
 @keyframes splash-expertise {

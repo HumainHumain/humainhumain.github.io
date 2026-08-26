@@ -24,6 +24,10 @@ section.splash-publications {
 	animation-timing-function: ease-in-out;
 	animation-delay: -320ms;
 
+	@media (orientation: portrait) {
+        animation-timing-function: steps(1);
+    }
+
 }
 
 

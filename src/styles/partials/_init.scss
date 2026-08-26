@@ -10,6 +10,10 @@
     --font-size-resp:   #{$font-resp}vw;
     --font-size:        min(var(--font-size-resp), var(--font-size-base));
 
+	// --font-mobile:      #{$font-mobile}px;
+	// --font-resp-mobile: #{$font-resp-mobile}vw;
+	// --font-size-mobile: min(var(--font-resp-mobile), var(--font-font-mobile));
+
 	--scroll-top:       2.5rem;
 
 	--color-fg:    #{$color-fg};
