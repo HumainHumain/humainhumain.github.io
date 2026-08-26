@@ -432,6 +432,10 @@ main {
             // width: 100dvw;
             // height: 100dvh;
 
+            &.yellow {
+                background-color: var(--color-yellow);
+            }
+
 
             & > div {
                 position: relative;

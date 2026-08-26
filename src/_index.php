@@ -28,7 +28,7 @@
     <?php echo $ethnographie; ?>
 </section>
 
-<section class="quote">
+<section class="quote yellow">
     <div>
         <?php echo $citationBrown; ?>
     </div>
