@@ -1,24 +1,55 @@
+
 section.splash-publications {
 
-	// background-color: red;
-
 	display: flex;
+	position: relative;
 	align-items: center;
 	justify-content: center;
 
-	height: 100vh;
-	// background-color: red;
-	background-image: var(--splash-publications);
+	width: 100dvw;
+	height: 100dvh;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 80% 80%;
+	background-size: 80% auto;
 
 	font-family: var(--font-hero);
 	font-size: 5rem;
 	color: var(--color-white);
 	text-transform: uppercase;
 
+
+	animation-name: splash-publications;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-delay: -320ms;
+
 }
+
+
+
+@keyframes splash-publications {
+	0%, 100% {
+		background-image: var(--splash-publications-1);
+	}
+	30% {
+		background-image: var(--splash-publications-1);
+	}
+	33% {
+		background-image: var(--splash-publications-2);
+	}
+	64% {
+		background-image: var(--splash-publications-2);
+	}
+	67% {
+		background-image: var(--splash-publications-3);
+	}
+	96% {
+		background-image: var(--splash-publications-3);
+	}
+}
+
+
 
 
 .publications-slideshow {
@@ -65,7 +96,7 @@ section.splash-publications {
 
 	}
 
-	img {
+	img.publications-rapport {
 		// flex: 0 0 auto;
 		width: 10rem;
 		// max-width: 100%;
@@ -73,6 +104,11 @@ section.splash-publications {
 		border: 0.5rem solid var(--color-blue);
 		// margin-bottom: 0.5rem;
 		margin: 0 auto;
+		cursor: pointer;
+		transition:  border-color 200ms;
+		&:hover {
+			border-color: var(--color-orange);
+		}
 	}
 
 	ul {

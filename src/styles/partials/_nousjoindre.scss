@@ -3,23 +3,57 @@ section.splash-nousjoindre {
 	// background-color: red;
 
 	display: flex;
+	position: relative;
 	align-items: center;
 	justify-content: center;
 
-	height: 100vh;
+	width: 100dhw;
+	height: 100dvh;
 	// background-color: red;
-	background-image: var(--splash-nousjoindre);
+	// background-image: var(--splash-nousjoindre);
 	background-repeat: no-repeat;
 	background-position: center;
+
 	background-size: 75% 75%;
+	@media (orientation: portrait) {
+		background-size: 75% auto;
+	}
 
 	font-family: var(--font-hero);
-	font-size: 5rem;
+	font-size: 6rem;
 	color: var(--color-white);
 	text-transform: uppercase;
 
+	animation-name: splash-nousjoindre;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-delay: -320ms;
+
 }
 
+
+
+@keyframes splash-nousjoindre {
+	0%, 100% {
+		background-image: var(--splash-nousjoindre-1);
+	}
+	30% {
+		background-image: var(--splash-nousjoindre-1);
+	}
+	33% {
+		background-image: var(--splash-nousjoindre-2);
+	}
+	64% {
+		background-image: var(--splash-nousjoindre-2);
+	}
+	67% {
+		background-image: var(--splash-nousjoindre-3);
+	}
+	96% {
+		background-image: var(--splash-nousjoindre-3);
+	}
+}
 
 .nousjoindre-slideshow {
 	background-image: url(../images/nousjoindre/00-splash.webp);

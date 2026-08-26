@@ -1,24 +1,53 @@
 section.splash-services {
 
-	// background-color: red;
-
 	display: flex;
+	position: relative;
 	align-items: center;
 	justify-content: center;
 
-	height: 100vh;
-	// background-color: red;
-	background-image: var(--splash-services);
+	width: 100dvw;
+	height: 100dvh;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 80% 80%;
+	background-size: 80% auto;
 
 	font-family: var(--font-hero);
 	font-size: 5rem;
 	color: var(--color-white);
 	text-transform: uppercase;
 
+
+	animation-name: splash-services;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-delay: -320ms;
+
 }
+
+
+
+@keyframes splash-services {
+	0%, 100% {
+		background-image: var(--splash-services-1);
+	}
+	30% {
+		background-image: var(--splash-services-1);
+	}
+	33% {
+		background-image: var(--splash-services-2);
+	}
+	64% {
+		background-image: var(--splash-services-2);
+	}
+	67% {
+		background-image: var(--splash-services-3);
+	}
+	96% {
+		background-image: var(--splash-services-3);
+	}
+}
+
 
 
 .services-slideshow {

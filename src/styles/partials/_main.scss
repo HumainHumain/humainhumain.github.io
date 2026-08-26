@@ -100,6 +100,31 @@ header {
 }
 
 
+
+@keyframes splash-accueil {
+	0%, 100% {
+		background-image: var(--splash-accueil-1);
+	}
+	30% {
+		background-image: var(--splash-accueil-1);
+	}
+	33% {
+		background-image: var(--splash-accueil-2);
+	}
+	64% {
+		background-image: var(--splash-accueil-2);
+	}
+	67% {
+		background-image: var(--splash-accueil-3);
+	}
+	96% {
+		background-image: var(--splash-accueil-3);
+	}
+}
+
+
+
+
 main {
     flex-grow: 1;
 
@@ -108,17 +133,28 @@ main {
         overflow-x: hidden;
 
         &.splash-accueil {
+            position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
 
-            height: 100vh;
+            width: 100dvw;
+            height: 100dvh;
             // background-color: red;
-            background-image: var(--spash-accueil);
+            background-image: var(--splash-accueil);
             background-repeat: no-repeat;
             background-position: center;
+
             background-size: 75% 75%;
-            // margin-top: 1rem;
+            @media (orientation: portrait) {
+                background-size: 75% auto;
+            }
+
+            animation-name: splash-accueil;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-delay: -320ms;
 
             &::after {
                 content: "";
@@ -128,7 +164,7 @@ main {
                 width: 100%;
 
                 aspect-ratio: 1553 / 705;
-                background-image: var(--spash-accueil-text);
+                background-image: var(--splash-accueil-text);
                 background-repeat: no-repeat;
                 background-size: contain;
                 z-index: 1;

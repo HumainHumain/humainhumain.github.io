@@ -1,25 +1,47 @@
 section.splash-expertise {
-
-	// background-color: red;
-
 	display: flex;
+	position: relative;
 	align-items: center;
 	justify-content: center;
 
-	height: 100vh;
-	// background-color: red;
-	background-image: var(--splash-expertise);
+	width: 100dvw;
+	height: 100dvh;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 80% 80%;
+	background-size: 80% auto;
 
+	text-transform: uppercase;
 	font-family: var(--font-hero);
 	font-size: 5rem;
 	color: var(--color-white);
-	text-transform: uppercase;
-
+	
+	animation-name: splash-expertise;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-delay: -320ms;
 }
 
+@keyframes splash-expertise {
+	0%, 100% {
+		background-image: var(--splash-expertise-1);
+	}
+	30% {
+		background-image: var(--splash-expertise-1);
+	}
+	33% {
+		background-image: var(--splash-expertise-2);
+	}
+	64% {
+		background-image: var(--splash-expertise-2);
+	}
+	67% {
+		background-image: var(--splash-expertise-3);
+	}
+	96% {
+		background-image: var(--splash-expertise-3);
+	}
+}
 
 
 .expertise-index {
@@ -193,7 +215,7 @@ section.splash-expertise {
 
 
 .expertise-slideshow {
-	background-image: url(../images/expertise/00-spash.webp);
+	background-image: url(../images/expertise/00-splash.webp);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;

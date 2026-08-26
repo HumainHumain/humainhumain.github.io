@@ -13,7 +13,7 @@
 <?php foreach($publications as $idx => $pub): ?>
 	<section class="publications-section<?php echo ($idx % 2 ? ' right' : ''); ?>">
 		<div>
-			<img src="../images/publications/<?php echo $pub->thumb; ?>">
+			<img class="publications-rapport" src="../images/publications/<?php echo $pub->thumb; ?>">
 			<a noopener noreferrer target="_blank" href="./rapports/<?php echo $pub->file; ?>"><small>Télécharger le rapport</small></a>
 		</div>
 		<div>
