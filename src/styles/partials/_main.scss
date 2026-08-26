@@ -2,14 +2,20 @@
 @use 'config' as *;
 
 @property --sphere-offset {
-  syntax: '<percent>'; /* <- defined as type number for the transition to work */
+  syntax: '<percent>';
   initial-value: 0;
   inherits: true;
 }
 
 @property --sphere-offset-right {
-  syntax: '<percent>'; /* <- defined as type number for the transition to work */
+  syntax: '<percent>';
   initial-value: 0;
+  inherits: true;
+}
+
+@property --border-color {
+  syntax: '<color>';
+  initial-value: white;
   inherits: true;
 }
 

@@ -42,32 +42,32 @@
 	</div>
 </section>
 
-<section class="expertise-section" id="anticiper">
+<section class="expertise-section" id="anticiper" data-hover="out">
 	<?php echo $anticiper; ?>
 	<div class="arrowup"><div title="Remonter" onclick="document.location.href='#expertise'"></div></div>
 </section>
 
-<section class="expertise-section-right" id="saisir">
+<section class="expertise-section-right" id="saisir" data-hover="out">
 	<?php echo $saisir; ?>
 	<div class="arrowup"><div title="Remonter" onclick="document.location.href='#expertise'"></div></div>
 </section>
 
-<section class="expertise-section" id="creer">
+<section class="expertise-section" id="creer" data-hover="out">
 	<?php echo $creer; ?>
 	<div class="arrowup"><div title="Remonter" onclick="document.location.href='#expertise'"></div></div>
 </section>
 
-<section class="expertise-section-right" id="rester">
+<section class="expertise-section-right" id="rester" data-hover="out">
 	<?php echo $rester; ?>
 	<div class="arrowup"><div title="Remonter" onclick="document.location.href='#expertise'"></div></div>
 </section>
 
-<section class="expertise-section" id="perspectives">
+<section class="expertise-section" id="perspectives" data-hover="out">
 	<?php echo $perspectives; ?>
 	<div class="arrowup"><div title="Remonter" onclick="document.location.href='#expertise'"></div></div>
 </section>
 
-<section class="expertise-section-right" id="inclusion">
+<section class="expertise-section-right" id="inclusion" data-hover="out">
 	<?php echo $inclusion; ?>
 	<div class="arrowup"><div title="Remonter" onclick="document.location.href='#expertise'"></div></div>
 </section>
