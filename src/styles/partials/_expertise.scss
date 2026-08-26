@@ -227,16 +227,9 @@ section.splash-expertise {
 		transform: translate(75%, -50%);
 		aspect-ratio: 1 / 1;
 		height: 70%;
-		// border-radius: 50% 100%;
-
-border-radius: 0%;
-border-top-left-radius: 50%;
-border-bottom-left-radius: 50%;
-
-		
+		border-radius: 50%;
 		box-sizing: border-box;
 		border: 0.5rem solid var(--border-color);
-		border-right: 0;
 		
 		transition: --border-color 100ms  ease-in-out, transform 100ms ease-in-out;
 		
