@@ -14,10 +14,6 @@
   image: dtq.svg
   url: https://www.dansetrad.qc.ca/
 
-- name: C40 Cities
-  image: c40-cities.svg
-  url: https://www.c40.org/
-
 - name: Ville-Marie
   image: ville-marie.svg
   url: https://montreal.ca/ville-marie
@@ -81,3 +77,7 @@
 - name: Centre des sciences de Montréal
   image: centre-des-sciences-de-montreal.svg
   url: https://www.clc-sic.ca/francais/salle-de-presse/vivez-une-experience-de-diversite-dinclusion-et-dexploration-infinie-avec-mini
+
+- name: C40 Cities
+  image: c40-cities.svg
+  url: https://www.c40.org/

@@ -1,6 +1,6 @@
 ### Saisir les espoirs et les appréhensions autour d’un projet
 
-**Vous développez un projet qui aura un impact sur la vie de citoyen.ne.s et vous souhaitez anticiper la façon dont celui-ci sera accueilli ?**
+**Vous développez un projet qui aura un impact sur la vie de résident·e·s et vous souhaitez anticiper la façon dont celui-ci sera accueilli ?**
 
 Vous cherchez à identifier les leviers mais aussi les résistances à l’appropriation d’un nouvel espace public ?
 

@@ -158,9 +158,6 @@ header {
 @keyframes splash-accueil {
 	0%, 100% {
 		background-image: var(--splash-accueil-1);
-
-        
-
 	}
 	30% {
 		background-image: var(--splash-accueil-1);
@@ -240,8 +237,8 @@ main {
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
-            aspect-ratio: 3 / 2;
-            width: 100%;
+            // aspect-ratio: 3 / 2;
+            width: 100dvw;
             height: calc(100dvh - var(--scroll-top));
             
             @media (orientation: portrait) {
