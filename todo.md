@@ -5,8 +5,12 @@
 - [X] Ajouter des collaborations
 - [X] Créer banner
 - [ ] Burger
-- [ ] Éricture inclusive
-- [ ] Crédit footer
+- [X] Éricture inclusive
+- [X] Crédit footer
+- [ ] Zoom possible
+- [ ] Publication disponible sur demande
+- [ ] Bulle citation plus grosse
+- [ ] Animation pastilles
 
 ## SEO
 - [X] Faire les images OG
@@ -22,7 +26,7 @@
 - [ ] Faire un readme.md
 
 ## Images
-- [ ] Modal: Accueil Photo Méralie
+- [X] Modal: Accueil Photo Méralie
 - [ ] Modal: Publications
 
 ## Kirigami

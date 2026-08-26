@@ -10,14 +10,15 @@
     --font-size-resp:   #{$font-resp}vw;
     --font-size:        min(var(--font-size-resp), var(--font-size-base));
 
-	--color-fg: #{$color-fg};
-	--color-bg: #{$color-bg};
+	--color-fg:    #{$color-fg};
+	--color-bg:    #{$color-bg};
+	--color-modal: #{$color-modal};
 
-	--color-green: #{$color-green};
+	--color-green:  #{$color-green};
 	--color-yellow: #{$color-yellow};
-	--color-white: #{$color-white};
-	--color-grey: #{$color-grey};
-	--color-blue: #{$color-blue};
+	--color-white:  #{$color-white};
+	--color-grey:   #{$color-grey};
+	--color-blue:   #{$color-blue};
 	--color-orange: #{$color-orange};
 
 

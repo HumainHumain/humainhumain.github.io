@@ -22,9 +22,9 @@ prepros:
 
 tasks:
 
-  # - name:  js-core
-  #   type:  js
-  #   entry: scripts/mei.core.js
+  - name:  js-core
+    type:  js
+    entry: scripts/hh.core.js
 
   - name:  scss-core
     type:  scss

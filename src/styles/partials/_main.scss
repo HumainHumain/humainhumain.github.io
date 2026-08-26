@@ -165,16 +165,48 @@ main {
                 height: 70%;
                 border-radius: 50%;
                 background: var(--color-yellow);
+                background-image: var(--demi-sphere);
+                background-position: 23% center;
+                background-repeat: no-repeat;
+                background-size: contain;
                 max-height: 30rem;
+
+                &:hover {
+                    background-color: red;
+                }
             }
+
+            // &::after {
+            //     content: "";
+            //     position: absolute;
+            //     left: 0%;
+            //     top: 50%;
+            //     transform: translate(-52%, -50%);
+            //     aspect-ratio: 1 / 1;
+            //     height: 60%;
+            //     border-radius: 50%;
+            //     // background: red;
+            //     background-image: var(--demi-sphere);
+
+            //     max-height: 30rem;
+            // }
+
 
             img {
                 width: 8rem;
                 border-radius: 50%;
                 border: 0.5rem solid var(--color-yellow);
+                transition-property: border;
+			    transition-duration: 100ms;
                 margin-top: 1rem;
+                cursor: pointer;
+
                 &:not(:last-of-type) {
                     margin-right: 2.5rem;
+                }
+
+                &:hover {
+                    border: 0.75rem solid var(--color-yellow);
                 }
             }
         }
