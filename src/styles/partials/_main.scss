@@ -76,13 +76,15 @@ header {
     top: 0;
 
     background-color: var(--color-bg);
+    
     // padding-bottom: 1rem;
     nav {
-
+        position: relative;
         display: flex;
         padding: 0rem 0.5rem;
         // background-color: red;
         height: 2.5rem;
+        flex-direction: row;
 
         gap: 1rem;
 
@@ -156,8 +158,107 @@ header {
 
     }
 
+    .burger {
+        display: none;
+
+    }
+
+    .logo-humain {
+        display: none;
+
+    }
+
 
 }
+
+@media (orientation: portrait) {
+
+    header {
+        background-color: var(--color-bg);
+        height: 5rem;
+    }
+
+    header > nav {
+        display: none;
+        background-color: var(--color-bg);
+        position: absolute;
+        top: 5rem;
+        right: 0;
+        height: auto;
+        // padding: 0.5rem;
+        // gap: 2rem;
+        // text-align: right;
+        flex-direction: column;
+        box-sizing: border-box;
+        border: 1.5rem solid var(--color-bg);
+        box-shadow: -5rem 5rem 15rem -5rem #{color.adjust($color-grey, $alpha: -0.25)};
+
+        & > a {
+            margin: auto 0 auto auto;
+            justify-content: right;
+
+            font-size: 3rem;
+            height: 5rem;
+
+            & > .nav-ii {
+                width: 2.4rem;
+                margin-right: 0.5rem;
+            }
+
+
+
+        }
+
+    }
+
+    header > .burger {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+
+        width: 5rem;
+        aspect-ratio: 1 / 1;
+        // background-color: red;
+        background-image: var(--icon-burger);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 80%;
+
+        transition: transform 100ms;
+        &.open {
+            transform: rotate(-90deg);
+        }
+    }
+
+    header:has(.burger.open) > nav {
+        display: flex;
+
+    }
+
+
+    header > .logo-humain {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        height: 5rem;
+        aspect-ratio: 1200 / 385;
+        // background-color: red;
+        background-image: var(--logo-humain-humain);
+        background-repeat: no-repeat;
+        background-position: 0.5rem center;
+        background-size: 80%;
+        cursor: pointer;
+
+    }
+
+}
+
+
+
 
 
 

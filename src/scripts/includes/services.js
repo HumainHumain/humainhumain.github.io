@@ -10,6 +10,19 @@ export default class Services {
 	async init() {
 		await documentReady();
 		this.modal = new Modal;
+
+		document.querySelectorAll('.services-index > div').forEach(elm => {
+			elm.addEventListener('click', () => {
+				document.location.href = `#${elm.className}`;
+			});
+		});
+		
+		document.querySelectorAll('.arrowup').forEach(elm => {
+			elm.addEventListener('click', () => {
+				document.location.href = '#services';
+			});
+		});
+
 		document.querySelectorAll('.services-section, .services-section-right').forEach(section => {
 			section.addEventListener('mousemove', e => {
 				const rect = section.getBoundingClientRect();

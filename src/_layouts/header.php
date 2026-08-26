@@ -24,5 +24,7 @@
             <a data-page="collaborations" href="/collaborations/">Collaborations</a>
             <a data-page="nousjoindre" href="/nous-joindre/">Nous joindre</a>
         </nav>
+        <div class="logo-humain"></div>
+        <div class="burger"></div>
     </header>
     <main>

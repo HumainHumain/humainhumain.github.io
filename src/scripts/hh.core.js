@@ -1,5 +1,6 @@
 import './libraries/helpers';
 import './libraries/fbhandler';
+import './libraries/burger';
 import Accueil from './includes/accueil';
 import Expertise from './includes/expertise';
 import Services from './includes/services';

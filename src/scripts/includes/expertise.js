@@ -10,6 +10,19 @@ export default class Expertise {
 	async init() {
 		await documentReady();
 		this.modal = new Modal;
+
+		document.querySelectorAll('.expertise-index > div').forEach(elm => {
+			elm.addEventListener('click', () => {
+				document.location.href = `#${elm.className}`;
+			});
+		});
+
+		document.querySelectorAll('.arrowup').forEach(elm => {
+			elm.addEventListener('click', () => {
+				document.location.href = '#expertise';
+			});
+		});
+
 		document.querySelectorAll('.expertise-section, .expertise-section-right').forEach(section => {
 			section.addEventListener('mousemove', e => {
 				const rect = section.getBoundingClientRect();
