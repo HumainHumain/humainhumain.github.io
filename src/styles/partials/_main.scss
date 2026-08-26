@@ -147,7 +147,7 @@ main {
 
             background-size: 75% 75%;
             @media (orientation: portrait) {
-                background-size: 75% auto;
+                background-size: 75%;
             }
 
             animation-name: splash-accueil;
@@ -317,7 +317,12 @@ main {
             justify-content: center;
             padding: 3rem;
 
+            // width: 100dvw;
+            // height: 100dvh;
+
+
             & > div {
+                position: relative;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -329,6 +334,12 @@ main {
                 color: var(--color-white);
                 border-radius: 50%;
                 aspect-ratio: 1 / 1;
+
+                // font-size: calc(1rem * 10dvw);
+                font-size: 1.3rem;
+                // height: 100%;
+                // max-width: 75%;
+                // max-height: 75%;
             }
 
 
