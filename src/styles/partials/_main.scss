@@ -1,3 +1,18 @@
+@use 'sass:color';
+@use 'config' as *;
+
+@property --sphere-offset {
+  syntax: '<percent>'; /* <- defined as type number for the transition to work */
+  initial-value: 0;
+  inherits: true;
+}
+
+@property --sphere-offset-right {
+  syntax: '<percent>'; /* <- defined as type number for the transition to work */
+  initial-value: 0;
+  inherits: true;
+}
+
 
 * {
     margin: 0;
@@ -220,15 +235,34 @@ main {
             aspect-ratio: 3 / 2;
             width: 100%;
             height: calc(100dvh - var(--scroll-top));
+            
+            @media (orientation: portrait) {
+                aspect-ratio: 3 / 2;
+                height: auto;
+            }
+
         }
 
         &.qui-sommes-nous-accueil {
+
+            --sphere-offset: -52%;
             // width: 100%
             position: relative;
-
             background-color: var(--color-green);
+            background-repeat: no-repeat;
             color: var(--color-yellow);
             padding: 4rem 5% 4rem 20%;
+
+            em {
+                font-weight: 600;
+                text-shadow: 0 0 0.1rem #{color.adjust($color-grey, $alpha: -0.25)}; //, 0 0 0.2rem #{color.adjust($color-white, $alpha: -0.25)};
+            }
+
+            &:has(em:hover) {
+                // background-color: red;
+                --sphere-offset: -25%;
+                
+            }
 
             &::before {
                 content: "";
@@ -246,25 +280,28 @@ main {
                 background-size: contain;
                 max-height: 30rem;
 
-                &:hover {
-                    background-color: red;
-                }
+                
+                // &:hover {
+                //     // background-color: red;
+                //     --sphere-offset: -52%;
+                // }
             }
 
-            // &::after {
-            //     content: "";
-            //     position: absolute;
-            //     left: 0%;
-            //     top: 50%;
-            //     transform: translate(-52%, -50%);
-            //     aspect-ratio: 1 / 1;
-            //     height: 60%;
-            //     border-radius: 50%;
-            //     // background: red;
-            //     background-image: var(--demi-sphere);
-
-            //     max-height: 30rem;
-            // }
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0%;
+                top: 50%;
+                transform: translate(var(--sphere-offset), -50%);
+                aspect-ratio: 1 / 1;
+                height: 80%;
+                border-radius: 50%;
+                // background: red;
+                background-image: var(--demi-sphere);
+                background-repeat: no-repeat;
+                transition: transform 200ms;
+                max-height: 30rem;
+            }
 
 
             img {
@@ -288,6 +325,8 @@ main {
 
 
         &.qu-est-ce-que-l-ethnographie-accueil {
+            --sphere-offset-right: 52%;
+
             position: relative;
             background-color: var(--color-grey);
             color: var(--color-white);
@@ -304,6 +343,29 @@ main {
                 border-radius: 50%;
                 background: var(--color-orange);
                 max-height: 30rem;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: 0%;
+                top: 50%;
+                transform: translate(var(--sphere-offset-right), -50%) scaleX(-1);
+                aspect-ratio: 1 / 1;
+                height: 80%;
+                border-radius: 50%;
+                // background: red;
+                background-image: var(--demi-sphere);
+                background-repeat: no-repeat;
+                transition: transform 200ms;
+                max-height: 30rem;
+            }
+
+
+            &:has(blockquote:hover) {
+                // background-color: red;
+                --sphere-offset-right: 25%;
+                
             }
 
 

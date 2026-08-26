@@ -221,4 +221,10 @@ section.splash-expertise {
 	background-size: cover;
 	width: 100%;
 	height: 100vh;
+
+	@media (orientation: portrait) {
+		aspect-ratio: 3 / 2;
+		height: auto;
+	}
+
 }

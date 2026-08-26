@@ -39,7 +39,8 @@
       url: https://ici.radio-canada.ca/ohdio/premiere/emissions/le-15-18/segments/rattrapage/2303811/portrait-social-ecosysteme-gigue-au-quebec-meralie-murray-hall
 
 - name: Pratiques informationnelles et besoins en matière de communication de l’arrondissement de Saint-Laurent (2025)
-  file: RAPPORT FINAL_HH_DCRC_29déc2025.pdf
+  # file: RAPPORT FINAL_HH_DCRC_29déc2025.pdf
+  file: __SUR_DEMANDE__
   image: saint-laurent.webp
   thumb: saint-laurent_tbn.webp
 

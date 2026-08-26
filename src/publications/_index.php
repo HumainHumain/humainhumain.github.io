@@ -14,7 +14,12 @@
 	<section class="publications-section<?php echo ($idx % 2 ? ' right' : ''); ?>">
 		<div>
 			<img class="publications-rapport" src="../images/publications/<?php echo $pub->thumb; ?>">
-			<a noopener noreferrer target="_blank" href="./rapports/<?php echo $pub->file; ?>"><small>Télécharger le rapport</small></a>
+			<?php if($pub->file == '__SUR_DEMANDE__'): ?>
+				<small>Disponible sur demande</small>
+			<?php else: ?>
+				<a noopener noreferrer target="_blank" href="./rapports/<?php echo $pub->file; ?>"><small>Télécharger le rapport</small></a>
+			<?php endif; ?>
+			
 		</div>
 		<div>
 			<h4><?php echo $pub->name; ?></h4>

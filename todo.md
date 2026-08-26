@@ -8,9 +8,10 @@
 - [X] Éricture inclusive
 - [X] Crédit footer
 - [X] Zoom possible
-- [ ] Publication disponible sur demande
+- [X] Publication disponible sur demande
 - [X] Bulle citation plus grosse
-- [ ] Animation pastilles
+- [X] Animation pastilles accueil
+- [ ] Animation services et expertise
 
 ## SEO
 - [X] Faire les images OG
