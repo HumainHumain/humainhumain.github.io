@@ -7,9 +7,9 @@
 - [ ] Burger
 - [X] Éricture inclusive
 - [X] Crédit footer
-- [ ] Zoom possible
+- [X] Zoom possible
 - [ ] Publication disponible sur demande
-- [ ] Bulle citation plus grosse
+- [X] Bulle citation plus grosse
 - [ ] Animation pastilles
 
 ## SEO
@@ -27,7 +27,7 @@
 
 ## Images
 - [X] Modal: Accueil Photo Méralie
-- [ ] Modal: Publications
+- [X] Modal: Publications
 
 ## Kirigami
 - [ ] Push version 1

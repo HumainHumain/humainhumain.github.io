@@ -139,6 +139,9 @@ header {
 @keyframes splash-accueil {
 	0%, 100% {
 		background-image: var(--splash-accueil-1);
+
+        
+
 	}
 	30% {
 		background-image: var(--splash-accueil-1);
@@ -179,6 +182,7 @@ main {
             background-image: var(--splash-accueil);
             background-repeat: no-repeat;
             background-position: center;
+            resize: both;
 
             background-size: auto 75%;
             @media (orientation: portrait) {
