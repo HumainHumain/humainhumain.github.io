@@ -5,6 +5,8 @@
  * @breadcrumb   true
  * 
  * @ogimage      ../images/expertise/ogdefault.webp
+ * @descshort    Nos champs d'intervention ethnographique
+ * @desclong     Découvrez comment notre expertise en ethnographie aide les organisations à anticiper les défis, créer des ponts entre les silos et favoriser l'inclusion sociale.
  * 
  * @anticiper    ../_data/expertise/01-anticiper.md
  * @saisir       ../_data/expertise/02-saisir.md

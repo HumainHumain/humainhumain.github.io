@@ -2,14 +2,16 @@
 /**
  * @id      nousjoindre
  * @title   Nous joindre
+ * 
  * @ogimage ../images/nousjoindre/ogdefault.webp
+ * @descshort Contactez notre équipe
+ * @desclong  Abonnez-vous à notre infolettre ou contactez l'équipe de Humain Humain pour discuter de votre prochain mandat en ethnographie sociale. 
  */
 ?>
 
 <section class="splash-nousjoindre">Nous<br>joindre</section>
 
 <section class="nousjoindre-slideshow"></section>
-
 
 <section class="nousjoindre-form">
 	

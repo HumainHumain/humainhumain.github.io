@@ -2,7 +2,11 @@
 /**
  * @id            accueil
  * @title         Accueil
+ * 
  * @ogimage       images/accueil/ogdefault.webp
+ * @descshort      Ethnographie au service des organisations
+ * @desclong       Par une approche de proximité, des méthodologies sensibles et une pensée systémique, Humain Humain aide les organisations publiques à comprendre en profondeur les usages actuels pour mieux orienter ceux de demain.
+ * 
  * 
  * @apropos       _data/accueil/a-propos.md
  * @ethnographie  _data/accueil/ethnographie.md

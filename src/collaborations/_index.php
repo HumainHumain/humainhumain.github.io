@@ -2,7 +2,10 @@
 /**
  * @id             collaborations
  * @title          Collaborations
+ * 
  * @ogimage        ../images/collaborations/ogdefault.webp
+ * @descshort      Nos partenaires et clients
+ * @desclong       Découvrez les organisations publiques, municipales et communautaires avec qui Humain Humain a collaboré depuis 2019.
  * 
  * @collaborations ../_data/collaborations/collaborations.yaml
  */

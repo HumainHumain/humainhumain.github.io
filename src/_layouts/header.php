@@ -36,19 +36,21 @@ if(!empty($breadcrumb)) {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <!-- <meta name="description" content="Sceptiques du Québec — déconstruire les mythes, combattre la transphobie et défendre les réalités humaines." /> -->
+        <!-- <meta name="keywords" content="sceptiques québec, droits civiques, LGBT, queer, trans, ressources scientifiques, pensée critique" /> -->
         <meta name="robots" content="index, follow" />
         <meta name="language" content="fr-CA" />
         <meta property="og:locale" content="fr_CA">
         <meta property="og:type" content="website">
-        <!-- <meta property="og:title" content="MÉI | Mouvement Étudiant Indépendantiste"> -->
-        <!-- <meta property="og:description" content="Le Mouvement Étudiant Indépendantiste (MÉI) est une organisation parapluie regroupant plus d’une vingtaine de comités souverainistes dans les cégeps et universités à travers tout le Québec. L’organisation mobilise et représente tous les étudiants en vue de construire un Québec pays."> -->
+        <meta property="og:title" content="Humain Humain | <?php echo STR::htmlesc($title); ?> | <?php echo STR::htmlesc($descshort); ?>">
+        <meta property="og:description" content="<?php echo STR::htmlesc($desclong); ?>">
         <meta property="og:url" content="<?php echo $pageurl; ?>">
         <meta property="og:image" content="<?php echo $ogimage; ?>">
         <link rel="canonical" href="<?php echo $pageurl; ?>">
         <link rel="icon" type="image/x-icon" href="<?php echo $relroot; ?>favicon.ico">
         <link rel="stylesheet" href="<?php echo $relroot; ?>styles/hh.core.min.css?###TIMESTAMP###">
         <script src="<?php echo $relroot; ?>scripts/hh.core.min.js?###TIMESTAMP###"></script>
-        <title>Humain Humain | <?php echo $title; ?></title>
+        <title>Humain Humain | <?php echo $title; ?> | <?php echo $descshort; ?></title>
 </head>
 <body>
 	<header>

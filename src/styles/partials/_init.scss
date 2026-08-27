@@ -4,15 +4,10 @@
 	--font-family: #{$font-family};
 	--font-title: #{$font-title};
 	--font-hero: #{$font-hero};
-	// --font-spacing:     #{$font-spacing};
 	--font-size-base: #{$font-base}px;
 	--font-size-break: #{$font-break}px;
 	--font-size-resp: #{$font-resp}vw;
 	--font-size: min(var(--font-size-resp), var(--font-size-base));
-
-	// --font-mobile:      #{$font-mobile}px;
-	// --font-resp-mobile: #{$font-resp-mobile}vw;
-	// --font-size-mobile: min(var(--font-resp-mobile), var(--font-font-mobile));
 
 	--scroll-top: 2.5rem;
 
@@ -86,3 +81,8 @@
 	--link-download-grey: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='2 1.7 20 20.6'%3E%3Cg fill='none' stroke='%23#{$color-grey-bin}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Cpath d='M3 12.3v7a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7'/%3E%3Cpath d='m7.9 12.3 4.1 4 4.1-4' data-name='Right'/%3E%3Cpath d='M12 2.7v11.5'/%3E%3C/g%3E%3C/svg%3E");
 }
 
+@media (orientation: portrait) {
+    :root {
+		--scroll-top: 5rem;
+	}
+}
