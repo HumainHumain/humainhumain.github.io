@@ -2,7 +2,7 @@
 /**
  * @id             collaborations
  * @title          Collaborations
- * @ogimage        images/collaborations/ogdefault.webp
+ * @ogimage        ../images/collaborations/ogdefault.webp
  * 
  * @collaborations ../_data/collaborations/collaborations.yaml
  */

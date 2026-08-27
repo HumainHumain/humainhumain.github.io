@@ -2,7 +2,7 @@
 /**
  * @id      nousjoindre
  * @title   Nous joindre
- * @ogimage images/nousjoindre/ogdefault.webp
+ * @ogimage ../images/nousjoindre/ogdefault.webp
  */
 ?>
 

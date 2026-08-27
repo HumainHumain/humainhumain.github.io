@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://humainhumain.com/sitemap.xml

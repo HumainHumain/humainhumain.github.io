@@ -2,7 +2,7 @@
 /**
  * @id           publications
  * @title        Publications
- * @ogimage      images/publications/ogdefault.webp
+ * @ogimage      ../images/publications/ogdefault.webp
  * 
  * @publications ../_data/publications/publications.yaml
  */

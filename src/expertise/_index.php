@@ -2,7 +2,7 @@
 /**
  * @id           expertise
  * @title        Expertise
- * @ogimage      images/expertise/ogdefault.webp
+ * @ogimage      ../images/expertise/ogdefault.webp
  * 
  * @anticiper    ../_data/expertise/01-anticiper.md
  * @saisir       ../_data/expertise/02-saisir.md

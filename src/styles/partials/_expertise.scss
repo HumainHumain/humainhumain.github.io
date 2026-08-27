@@ -184,7 +184,7 @@ section.splash-expertise {
 		box-sizing: border-box;
 		border: 0.5rem solid var(--border-color);
 		
-		transition: --border-color 100ms ease-in-out, transform 100ms ease-in-out;
+		transition: --border-color 250ms  ease-in-out, transform 250ms ease-in-out;
 		// transition-duration: ;
 
 		background-repeat: no-repeat;
@@ -231,7 +231,7 @@ section.splash-expertise {
 		box-sizing: border-box;
 		border: 0.5rem solid var(--border-color);
 		
-		transition: --border-color 100ms  ease-in-out, transform 100ms ease-in-out;
+		transition: --border-color 250ms  ease-in-out, transform 250ms ease-in-out;
 		
 		background-repeat: no-repeat;
 		background-position: center center;
