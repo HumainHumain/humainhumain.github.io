@@ -7,14 +7,15 @@ footer {
 	--opacity-credits-anim: 0;
 }
 
-footer:has(#credits-site-web:hover) {
-	--play-state: running;
-	--display-credits-anim: block;
-	--visibility-credits-anim: visible;
-	--opacity-credits-anim: 1;
+
+@media (orientation: landscape) {
+	footer:has(#credits-site-web:hover) {
+		--play-state: running;
+		--display-credits-anim: block;
+		--visibility-credits-anim: visible;
+		--opacity-credits-anim: 1;
+	}
 }
-
-
 
 
 .credits__anim {

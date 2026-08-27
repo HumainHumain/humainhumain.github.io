@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@kirigami/kirigami": "^1.0.0"
+  }
+}
