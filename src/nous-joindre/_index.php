@@ -1,7 +1,8 @@
 <?php
 /**
- * @id    nousjoindre
- * @title Nous joindre
+ * @id      nousjoindre
+ * @title   Nous joindre
+ * @ogimage images/nousjoindre/ogdefault.webp
  */
 ?>
 

@@ -1,0 +1,69 @@
+
+
+footer {
+	--play-state: paused;
+	--display-credits-anim: none;
+	--visibility-credits-anim: hidden;
+	--opacity-credits-anim: 0;
+}
+
+footer:has(#credits-site-web:hover) {
+	--play-state: running;
+	--display-credits-anim: block;
+	--visibility-credits-anim: visible;
+	--opacity-credits-anim: 1;
+}
+
+
+
+
+.credits__anim {
+	--blink-speed: 1s;
+	visibility: var(--visibility-credits-anim);
+	opacity: var(--opacity-credits-anim);
+	
+	transition-property: visibility opacity animation-play-state;
+	transition-duration: 100ms;
+	transition-timing-function: ease-in-out;
+
+	font-size: 0;
+	width: 60vmin;
+	margin: 1vmin auto;
+
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	&__block {
+		display: inline-block;
+		margin: 0.25vmin;
+		width: 4.4vmin;
+		aspect-ratio: 1/1;
+		border-radius: 50%;
+		
+		rotate: calc(360deg * var(--nb4));
+		animation-name: leds_drop;
+		animation-timing-function: cubic-bezier(0.7, -0.27, 0.66, 0.66);
+		animation-duration: calc((1s * var(--nb3)) + 1.5s);
+		animation-iteration-count: infinite;
+		animation-fill-mode: both;
+		animation-delay: calc(0s - (var(--blink-speed) * var(--nb1)));
+		animation-play-state: var(--play-state);
+	}
+}
+
+@keyframes leds_drop {
+	0%, 100% {
+		background-color: var(--color-white);
+		transform: translateX(0) scale(0.75);
+		opacity: 0.25;
+	}
+	60% {
+		transform: translateX(calc(50vmax * var(--nb2))) scale(1.75);
+		opacity: 1;
+	}
+	90% {
+		background-color: var(--blink-color);
+	}
+}

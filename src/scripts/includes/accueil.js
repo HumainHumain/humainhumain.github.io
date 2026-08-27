@@ -8,7 +8,6 @@ export default class Accueil {
 		this.init();
 	}
 
-
 	async init() {
 		await documentReady();
 		this.modal = new Modal;
@@ -20,17 +19,8 @@ export default class Accueil {
 					await this.modal.show(create('img', 'modal-image', null, { src: large }));
 					res();
 				}));
-
-
 			});
-			// console.log(img);
-
 		});
-
-
-
 	}
-
-
 
 }

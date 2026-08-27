@@ -2,6 +2,8 @@
 /**
  * @id           services
  * @title        Services
+ * @ogimage      images/services/ogdefault.webp
+ * 
  * @portraits    ../_data/services/01-portraits.md
  * @architecture ../_data/services/02-architecture.md
  * @placemaking  ../_data/services/03-placemaking.md

@@ -1,7 +1,9 @@
 <?php
 /**
- * @id    publications
- * @title Publications
+ * @id           publications
+ * @title        Publications
+ * @ogimage      images/publications/ogdefault.webp
+ * 
  * @publications ../_data/publications/publications.yaml
  */
 ?>

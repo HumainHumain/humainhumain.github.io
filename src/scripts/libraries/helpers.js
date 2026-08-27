@@ -48,33 +48,6 @@ self.preloadImage = url => {
 }
 
 
-// /******************************************************
-//  *                 Format Time HH:ii:ss               *
-//  ******************************************************/
-// self.formatTime = (secondsFloat) => {
-//     const totalSeconds = Math.floor(secondsFloat);
-//     const minutes = Math.floor(totalSeconds / 60);
-//     const seconds = totalSeconds % 60;
-//     return `${minutes}:${seconds.toString().padStart(2, '0')}`;
-// }
-
-
-// /******************************************************
-//  *                Escape HTML characters              *
-//  ******************************************************/
-// self.escapeHTML = (str) => {
-// 	return str.replace(/[&<>"']/g, function (m) {
-// 		return {
-// 			'&': '&amp;',
-// 			'<': '&lt;',
-// 			'>': '&gt;',
-// 			'"': '&quot;',
-// 			"'": '&#39;'
-// 		}[m];
-// 	});
-// }
-
-
 /******************************************************
  *               DOMDocument async loaded             *
  ******************************************************/
@@ -91,45 +64,3 @@ self.documentReady = function(clb = null) {
 		}
 	});
 }
-
-
-// /******************************************************
-//  *                Download JSON Object                *
-//  ******************************************************/
-// self.downloadJsonObject = (obj, filename) => {
-//     const a = document.createElement("a");
-//     a.href = "data:application/json;charset=utf-8," + encodeURIComponent(JSON.stringify(obj, null, "\t"));
-//     a.download = filename;
-//     document.body.appendChild(a);
-//     a.click();
-//     document.body.removeChild(a);
-// }
-
-
-// /******************************************************
-//  *               Copy text to clipboard               *
-//  ******************************************************/
-// self.copyToClipboard = async text => {
-// 	if (navigator.clipboard && typeof navigator.clipboard.writeText === "function") {
-// 		try {
-// 			await navigator.clipboard.writeText(text);
-// 			return true;
-// 		} catch (e) { }
-// 	}
-// 	try {
-// 		const ta = document.createElement("textarea");
-// 		ta.value = text;
-// 		ta.style.position = "fixed";
-// 		ta.style.top = "-9999px";
-// 		ta.style.left = "-9999px";
-// 		ta.style.opacity = "0";
-// 		document.body.appendChild(ta);
-// 		ta.focus();
-// 		ta.select();
-// 		const ok = document.execCommand("copy");
-// 		document.body.removeChild(ta);
-// 		return ok;
-// 	} catch (e) {
-// 		return false;
-// 	}
-// }

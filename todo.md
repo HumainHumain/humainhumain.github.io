@@ -4,14 +4,14 @@
 - [ ] Faire formulaire infolettre
 - [X] Ajouter des collaborations
 - [X] Créer banner
-- [ ] Burger
+- [X] Burger
 - [X] Éricture inclusive
 - [X] Crédit footer
 - [X] Zoom possible
 - [X] Publication disponible sur demande
 - [X] Bulle citation plus grosse
 - [X] Animation pastilles accueil
-- [ ] Animation services et expertise
+- [X] Animation services et expertise
 
 ## SEO
 - [X] Faire les images OG
