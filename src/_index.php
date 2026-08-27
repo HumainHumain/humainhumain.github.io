@@ -18,6 +18,8 @@
     <?php echo $apropos; ?>
 </section>
 
+<section class="slideshow-accueil meralie"></section>
+
 <section class="quote">
     <div>
         <?php echo $citation; ?>
