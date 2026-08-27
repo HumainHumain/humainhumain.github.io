@@ -689,7 +689,8 @@ footer {
 
 
     & > div:nth-child(2),
-    & > div:nth-child(3) {
+    & > div:nth-child(3),
+    & > div:nth-child(4) {
         // background-color: red;
         display: flex;
         justify-content: center;
@@ -699,7 +700,11 @@ footer {
         // filter: grayscale(100);
         color: var(--color-white);
         // z-index: -1;
-        margin-top: 0.5rem;
+        margin-top: 0.25rem;
+
+        span.fake-link {
+            text-decoration: underline;
+        }
 
         a {
             color: var(--color-white);
@@ -709,12 +714,14 @@ footer {
                 z-index: 100000;
                 // background-color: red;
             }
+
+
         }
 
     }
 
 
-    & > div:nth-child(4) {
+    & > div:nth-child(5) {
         margin-top: 0.5rem;
         // background-color: blue;
         display: flex;
