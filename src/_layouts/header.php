@@ -1,6 +1,35 @@
 <?php
+
 $ogimage = $baseurl . str_replace(FS::pathJoin('/project', $root), '', FS::pathJoin(pathinfo($file, PATHINFO_DIRNAME), $ogimage));
 $pageurl = $baseurl . str_replace(FS::pathJoin('/project', $root), '', pathinfo($file, PATHINFO_DIRNAME)) . '/';
+
+
+
+if(!empty($breadcrumb)) {
+    $accueil = FS::phpFileInfo(__DIR__ . '/' . $relroot . '_index.php');
+
+// {
+//   "@context": "https://schema.org",
+//   "@type": "BreadcrumbList",
+//   "itemListElement": [
+//     { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://humainhumain.github.io/" },
+//     { "@type": "ListItem", "position": 2, "name": "Expertise", "item": "https://humainhumain.github.io/expertise/" }
+//   ]
+// }
+
+    $shema = [
+        '@context' => 'https://schema.org',
+        '@type'    => 'BreadcrumbList',
+        'itemListElement' => [
+            [
+                '@type' => 'ListItem',
+            ],
+        ],
+    ];
+
+
+}
+
 
 ?><!DOCTYPE html>
 <html lang="fr-CA" data-page="<? echo $id; ?>">

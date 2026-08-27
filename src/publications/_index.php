@@ -19,7 +19,7 @@
 			<?php if($pub->file == '__SUR_DEMANDE__'): ?>
 				<small>Disponible sur demande</small>
 			<?php else: ?>
-				<a noopener noreferrer target="_blank" href="./rapports/<?php echo $pub->file; ?>"><small>Télécharger le rapport</small></a>
+				<a target="_blank" href="./rapports/<?php echo $pub->file; ?>"><small>Télécharger le rapport</small></a>
 			<?php endif; ?>
 			
 		</div>

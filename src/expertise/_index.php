@@ -2,6 +2,8 @@
 /**
  * @id           expertise
  * @title        Expertise
+ * @breadcrumb   true
+ * 
  * @ogimage      ../images/expertise/ogdefault.webp
  * 
  * @anticiper    ../_data/expertise/01-anticiper.md

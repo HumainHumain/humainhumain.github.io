@@ -3,22 +3,14 @@ kirigami:
   baseurl: https://humainhumain.github.io
   banner:  assets/banner.txt
   root:    src
-  
 
 export:
   path: dist
 
-
 prepros:
   before: _layouts/header.php
   after:  _layouts/footer.php
-  # mountext: [.webp, .jpeg]
-  # network: true
-  # deep: true
   format: true
-  # includes:
-    # - _plugins/md.plugins.php
-
 
 tasks:
 
