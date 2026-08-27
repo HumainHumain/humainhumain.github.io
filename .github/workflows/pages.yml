@@ -16,8 +16,8 @@ concurrency:
 
 jobs:
   build-and-deploy:
-    env:
-      NODE_OPTIONS: "--experimental-wasm-jspi"
+    # env:
+    #   NODE_OPTIONS: "--experimental-wasm-jspi"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -34,7 +34,7 @@ jobs:
 
       - name: Build and Export
         run: |
-          npx kiri export
+          node --experimental-wasm-jspi ./node_modules/.bin/kiri export
 
       - name: Upload artifact (dist)
         uses: actions/upload-pages-artifact@v5
