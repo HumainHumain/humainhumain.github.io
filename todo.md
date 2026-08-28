@@ -12,6 +12,7 @@
 - [X] Bulle citation plus grosse
 - [X] Animation pastilles accueil
 - [X] Animation services et expertise
+- [ ] Weird
 
 ## SEO
 - [X] Faire les images OG
