@@ -1,7 +1,7 @@
 # TODO
 
 ## Général
-- [ ] Faire formulaire infolettre
+- [X] Faire formulaire infolettre
 - [X] Ajouter des collaborations
 - [X] Créer banner
 - [X] Burger
@@ -15,22 +15,22 @@
 
 ## SEO
 - [X] Faire les images OG
-- [ ] Faire les headers OG
-- [ ] Ajouter les metas (voir sceptiques)
-- [ ] Ajouter un json+ld
+- [X] Faire les headers OG
+- [X] Ajouter les metas (voir sceptiques)
+- [X] Ajouter un json+ld
 - [ ] Ajouter Google Analytics
 - [ ] Ajouter Google Search Console
 
 ## Github
-- [ ] Faire icone
+- [X] Faire icone
 - [ ] Ajouter le nom de domaine
-- [ ] Faire un readme.md
+- [X] Faire un readme.md
 
 ## Images
 - [X] Modal: Accueil Photo Méralie
 - [X] Modal: Publications
 
 ## Kirigami
-- [ ] Push version 1
-- [ ] Test sur github action
-- [ ] add phpinfo()
+- [X] Push version 1
+- [X] Test sur github action
+- [X] add phpinfo()
