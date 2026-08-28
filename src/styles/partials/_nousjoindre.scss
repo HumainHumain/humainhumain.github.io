@@ -83,24 +83,59 @@ section.splash-nousjoindre {
 .nousjoindre-form {
 	position: relative;
 	background-color: var(--color-blue);
+	color: var(--color-white);
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 3rem;
+	padding: 3rem 0;
+	flex-direction: column;
+	
 
-	& > div {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
-		padding: 1rem;
-
-		background-color: var(--color-grey);
-
-		color: var(--color-white);
-		border-radius: 50%;
-		aspect-ratio: 1 / 1;
+	& > * {
+		z-index: 10;
 	}
+
+	// & > div {
+	// 	display: flex;
+	// 	align-items: center;
+	// 	justify-content: center;
+	// 	text-align: center;
+	// 	padding: 1rem;
+
+	// 	background-color: var(--color-grey);
+
+	// 	color: var(--color-white);
+	// 	border-radius: 50%;
+	// 	aspect-ratio: 1 / 1;
+	// }
+
+
+	& > .infolettre, & > .contact {
+		padding: 0 20dvw;
+
+		h2 {
+			white-space: nowrap;
+			color: var(--color-yellow);
+			text-shadow: 0 0 0.1rem var(--color-grey);
+		}
+
+		a, em {
+			font-weight: 600;
+			color: var(--color-yellow);
+			text-shadow: 0 0 0.1rem var(--color-grey); //, 0 0 0.2rem #{color.adjust($color-white, $alpha: -0.25)};
+		}
+
+	}
+
+	iframe {
+		width: 100%;
+		// aspect-ratio: 3 / 2;
+		height: 5rem;
+		margin-bottom: 1rem;
+		border: none;
+		background-color: transparent;
+	}
+
 
 
 	&::before {
@@ -117,6 +152,7 @@ section.splash-nousjoindre {
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: contain;
+		z-index: 1;
 
 	}
 	&::after {
@@ -131,6 +167,7 @@ section.splash-nousjoindre {
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: contain;
+		z-index: 1;
 	}
 
 }

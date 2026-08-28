@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="../../../styles/hh.core.min.css?###TIMESTAMP###">
+		<title>Humain Humain | Formulaire d'inscription à l'infolettre</title>
+		<style>
+			body {
+				/* background-color: var(--color-grey); */
+				/* color: var(--color-white); */
+				background-color: transparent;
+				padding: 0;
+				display: flex;
+				justify-content: center;
+				align-items: left;
+				/* padding: 0 3rem; */
+				/* margin: 0; */
+				color: var(--color-white);
+			}
+
+			form {
+				padding: 0 20dvw;
+			}
+
+			label {
+				font-weight: 600;
+			}
+
+			input[type="email"] {
+				width: 12rem;
+				font-family: var(--font-family);
+				font-size: 0.8rem;
+				border: 0;
+				padding: 0.2rem;
+				color: var(--color-grey);
+			}
+
+			.paperplane {
+				width: 1rem;
+				aspect-ratio: 1 / 1;
+				background-image: var(--paperplane);
+				border: none;
+				background-color: transparent;
+				cursor: pointer;
+				transform: translateY(15%);
+			}
+		</style>
+	</head>
+	<body>
+		<form action="https://app.cyberimpact.com/optin" method="post" accept-charset="utf-8">
+			<div>
+				<label for="ci_email">Courriel :</label>
+				<input type="email" id="ci_email" name="ci_email" maxlength="255" required="" placeholder="mon@courriel.ca"/>
+				<button type="submit" class="paperplane" title="S'inscrire"></button>
+			</div>
+			<div style="display:block; visibility:hidden; height:1px;">
+				<input type="hidden" id="ci_groups" name="ci_groups" value="1"/>
+				<input type="hidden" id="ci_account" name="ci_account" value="984dfdb8-8905-4e8a-8da5-b2fe20bfad0c"/>
+				<input type="hidden" id="ci_language" name="ci_language" value="fr_ca"/>
+				<input type="hidden" id="ci_sent_url" name="ci_sent_url" value="https://humainhumain.github.io/nous-joindre/infolettre/succes/"/>
+				<input type="hidden" id="ci_error_url" name="ci_error_url" value="https://humainhumain.github.io/nous-joindre/infolettre/erreur/" />
+				<input type="hidden" id="ci_confirm_url" name="ci_confirm_url" value="" />>
+			</div>
+		</form>
+	</body>
+</html>

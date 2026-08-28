@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="../../../styles/hh.core.min.css?###TIMESTAMP###">
+		<title>Humain Humain | Erreur</title>
+		<style>
+			body {
+				/* background-color: var(--color-grey); */
+				/* color: var(--color-white); */
+				background-color: transparent;
+				padding: 0;
+				display: flex;
+				justify-content: center;
+				align-items: left;
+				/* padding: 0 3rem; */
+				/* margin: 0; */
+				color: var(--color-white);
+			}
+
+			div {
+				padding: 0 20dvw;
+			}
+
+			div::before {
+				content: "";
+				display: inline-block;
+				width: 1rem;
+				aspect-ratio: 1 / 1;
+				background-image: var(--x-mark);
+				transform: translateY(10%);
+				margin-right: 0.5rem;
+			}
+
+			label {
+				font-weight: 600;
+			}
+
+			input[type="email"] {
+				width: 12rem;
+				font-family: var(--font-family);
+				font-size: 0.8rem;
+				border: 0;
+				padding: 0.2rem;
+				color: var(--color-grey);
+			}
+
+			.paperplane {
+				width: 1rem;
+				aspect-ratio: 1 / 1;
+				background-image: var(--paperplane);
+				border: none;
+				background-color: transparent;
+				cursor: pointer;
+				transform: translateY(12%);
+			}
+		</style>
+	</head>
+	<body>
+		<div>Une erreur est survenue.</div>
+	</body>
+</html>
