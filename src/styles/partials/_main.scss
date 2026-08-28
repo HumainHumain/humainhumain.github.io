@@ -680,6 +680,7 @@ footer {
         // filter: grayscale(100);
         color: var(--color-white);
         z-index: -1;
+        margin-bottom: 0.5rem;
 
         &::before {
             content: '';
@@ -735,6 +736,7 @@ footer {
         align-items: center;
         justify-content: center;
         gap: 0.5rem;
+        margin-top: 1rem;
 
         .facebook {
             width: 1rem;

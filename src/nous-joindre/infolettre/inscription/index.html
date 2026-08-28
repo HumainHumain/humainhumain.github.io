@@ -7,15 +7,11 @@
 		<title>Humain Humain | Formulaire d'inscription à l'infolettre</title>
 		<style>
 			body {
-				/* background-color: var(--color-grey); */
-				/* color: var(--color-white); */
 				background-color: transparent;
 				padding: 0;
 				display: flex;
 				justify-content: center;
 				align-items: left;
-				/* padding: 0 3rem; */
-				/* margin: 0; */
 				color: var(--color-grey);
 			}
 
@@ -24,7 +20,10 @@
 			}
 
 			label {
+				position: relative;
+				display: inline-block;
 				font-weight: 800;
+				transform: translateY(10%);
 			}
 
 			input[type="email"] {
@@ -34,6 +33,9 @@
 				border: 0;
 				padding: 0.2rem;
 				color: var(--color-grey);
+				-webkit-appearance: none;
+				appearance: none;
+				border-radius: 0;
 			}
 
 			.paperplane {
