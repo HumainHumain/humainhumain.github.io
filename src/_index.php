@@ -1,18 +1,18 @@
 <?php
 /**
- * @id            accueil
- * @title         Accueil
+ * @id             accueil
+ * @title          Accueil
  * 
- * @ogimage       images/accueil/ogdefault.webp
+ * @schema         _data/accueil/schema.json
+ * @ogimage        images/accueil/ogdefault.webp
  * @descshort      Ethnographie au service des organisations
  * @desclong       Par une approche de proximité, des méthodologies sensibles et une pensée systémique, Humain Humain aide les organisations publiques à comprendre en profondeur les usages actuels pour mieux orienter ceux de demain.
  * 
- * 
- * @apropos       _data/accueil/a-propos.md
- * @ethnographie  _data/accueil/ethnographie.md
- * @citation      _data/accueil/citation.md
- * @approche      _data/accueil/approche.md
- * @citationBrown _data/accueil/citation-brown.md
+ * @apropos        _data/accueil/a-propos.md
+ * @ethnographie   _data/accueil/ethnographie.md
+ * @citation       _data/accueil/citation.md
+ * @approche       _data/accueil/approche.md
+ * @citationBrown  _data/accueil/citation-brown.md
  */
 ?>
 

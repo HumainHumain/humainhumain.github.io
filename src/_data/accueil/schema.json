@@ -1,0 +1,22 @@
+{
+	"@context": "https://schema.org",
+	"@type": "ProfessionalService",
+	"name": "Humain Humain",
+	"url": "###ABSURL###",
+	"description": "###DESCRIPTION###",
+	"foundingDate": "2019",
+	"founder": {
+		"@type": "Person",
+		"name": "###PERSON###",
+		"jobTitle": "###JOBTITLE###"
+	},
+	"email": "###EMAIL###",
+	"sameAs": [
+		"###FACEBOOK###"
+	],
+	"areaServed": {
+		"@type": "AdministrativeArea",
+		"name": "###AREA###"
+	},
+	"knowsAbout": "###KNOWSABOUT###"
+}

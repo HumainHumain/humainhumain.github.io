@@ -1,56 +1,85 @@
 <?php
 
 $ogimage = $baseurl . str_replace(FS::pathJoin('/project', $root), '', FS::pathJoin(pathinfo($file, PATHINFO_DIRNAME), $ogimage));
-$pageurl = $baseurl . str_replace(FS::pathJoin('/project', $root), '', pathinfo($file, PATHINFO_DIRNAME)) . '/';
+$pageurl = $baseurl . $absurl;
 
-
-
-if(!empty($breadcrumb)) {
+if(!empty($breadcrumb) && boolval($breadcrumb)) {
     $accueil = FS::phpFileInfo(__DIR__ . '/' . $relroot . '_index.php');
-
-// {
-//   "@context": "https://schema.org",
-//   "@type": "BreadcrumbList",
-//   "itemListElement": [
-//     { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://humainhumain.github.io/" },
-//     { "@type": "ListItem", "position": 2, "name": "Expertise", "item": "https://humainhumain.github.io/expertise/" }
-//   ]
-// }
-
-    $shema = [
+    $shemabc = [
         '@context' => 'https://schema.org',
         '@type'    => 'BreadcrumbList',
         'itemListElement' => [
             [
                 '@type' => 'ListItem',
+                '@position' => 1,
+                'name' => $accueil->title,
+                'item' => $baseurl . '/'
+            ],
+            [
+                '@type' => 'ListItem',
+                '@position' => 1,
+                'name' => $title,
+                'item' => $pageurl
             ],
         ],
     ];
-
-
 }
 
+if(!empty($schema)) {
+    $schema = replaceSchemaPlaceholders($schema, [
+        'PROJECT'     => $project,
+        'TITLE'       => $project . ' | ' . $title . ' | ' . $descshort,
+        'BASEURL'     => $baseurl . '/',
+        'ABSURL'      => $baseurl . $absurl,
+        'DESCRIPTION' => $description,
+        'PERSON'      => $person,
+        'JOBTITLE'    => $jobtitle,
+        'EMAIL'       => $email,
+        'FACEBOOK'    => $facebook,
+        'AREA'        => $area,
+        'KNOWSABOUT'  => $knowsabout,
+    ]);
+}
 
 ?><!DOCTYPE html>
 <html lang="fr-CA" data-page="<? echo $id; ?>">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-        <!-- <meta name="description" content="Sceptiques du Québec — déconstruire les mythes, combattre la transphobie et défendre les réalités humaines." /> -->
-        <!-- <meta name="keywords" content="sceptiques québec, droits civiques, LGBT, queer, trans, ressources scientifiques, pensée critique" /> -->
+        <meta name="description" content="<?php echo STR::htmlesc($description); ?>" />
+        <meta name="keywords" content="<?php echo STR::htmlesc(join(', ', $keywords)); ?>" />
         <meta name="robots" content="index, follow" />
         <meta name="language" content="fr-CA" />
+        <meta name="generator" content="Kirigami">
+        <meta name="author" content="<?php echo STR::htmlesc($author); ?>">
+        <meta name="designer" content="<?php echo STR::htmlesc($author); ?>">
+        <meta property="og:site_name" content="<?php echo STR::htmlesc($project); ?>">
         <meta property="og:locale" content="fr_CA">
         <meta property="og:type" content="website">
-        <meta property="og:title" content="Humain Humain | <?php echo STR::htmlesc($title); ?> | <?php echo STR::htmlesc($descshort); ?>">
+        <meta property="og:title" content="<?php echo STR::htmlesc($project); ?> | <?php echo STR::htmlesc($title); ?> | <?php echo STR::htmlesc($descshort); ?>">
         <meta property="og:description" content="<?php echo STR::htmlesc($desclong); ?>">
         <meta property="og:url" content="<?php echo $pageurl; ?>">
         <meta property="og:image" content="<?php echo $ogimage; ?>">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="<?php echo STR::htmlesc($project); ?> | <?php echo STR::htmlesc($title); ?> | <?php echo STR::htmlesc($descshort); ?>">
+        <meta name="twitter:description" content="<?php echo STR::htmlesc($desclong); ?>">
+        <meta name="twitter:image" content="<?php echo $ogimage; ?>">
         <link rel="canonical" href="<?php echo $pageurl; ?>">
+        <link rel="author" type="text/plain" href="<?php echo $relroot; ?>humans.txt">
         <link rel="icon" type="image/x-icon" href="<?php echo $relroot; ?>favicon.ico">
         <link rel="stylesheet" href="<?php echo $relroot; ?>styles/hh.core.min.css?###TIMESTAMP###">
+        <title><?php echo STR::htmlesc($project); ?> | <?php echo STR::htmlesc($title); ?> | <?php echo STR::htmlesc($descshort); ?></title>
         <script src="<?php echo $relroot; ?>scripts/hh.core.min.js?###TIMESTAMP###"></script>
-        <title>Humain Humain | <?php echo $title; ?> | <?php echo $descshort; ?></title>
+        <? if(!empty($shemabc)): ?>
+        <script type="application/ld+json">
+<?php echo json_encode($shemabc, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE); ?>
+        </script>
+        <?php endif; ?>
+        <? if(!empty($schema)): ?>
+        <script type="application/ld+json">
+<?php echo json_encode($schema, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE); ?>
+        </script>
+        <?php endif; ?>
 </head>
 <body>
 	<header>

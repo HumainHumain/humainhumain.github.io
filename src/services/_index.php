@@ -2,7 +2,9 @@
 /**
  * @id           services
  * @title        Services
+ * @breadcrumb   true
  * 
+ * @schema       ../_data/services/schema.json
  * @ogimage      ../images/services/ogdefault.webp
  * @descshort    Nos services de recherche-terrain
  * @desclong     De l'urbanisme au numérique, nous offrons des services d'ethnographie appliquée pour comprendre les usages réels et guider vos décisions stratégiques.

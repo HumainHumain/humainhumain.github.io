@@ -1,0 +1,33 @@
+{
+	"@context": "https://schema.org",
+	"@type": "WebPage",
+	"name": "###TITLE###",
+	"url": "###ABSURL###",
+	"isPartOf": {
+		"@type": "WebSite",
+		"name": "###PROJECT###",
+		"url": "###BASEURL###"
+	},
+	"mentions": [
+		{
+			"@type": "Organization",
+			"name": "Ville de Montréal"
+		},
+		{
+			"@type": "Organization",
+			"name": "Parcs Canada"
+		},
+		{
+			"@type": "Organization",
+			"name": "Équiterre"
+		},
+		{
+			"@type": "Organization",
+			"name": "C40 Cities"
+		},
+		{
+			"@type": "Organization",
+			"name": "Danse Trad Québec"
+		}
+	]
+}

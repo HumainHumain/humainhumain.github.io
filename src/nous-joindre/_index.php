@@ -1,11 +1,13 @@
 <?php
 /**
- * @id      nousjoindre
- * @title   Nous joindre
+ * @id           nousjoindre
+ * @title        Nous joindre
+ * @breadcrumb   true
  * 
- * @ogimage ../images/nousjoindre/ogdefault.webp
- * @descshort Contactez notre équipe
- * @desclong  Abonnez-vous à notre infolettre ou contactez l'équipe de Humain Humain pour discuter de votre prochain mandat en ethnographie sociale. 
+ * @schema       ../_data/nousjoindre/schema.json
+ * @ogimage      ../images/nousjoindre/ogdefault.webp
+ * @descshort    Contactez notre équipe
+ * @desclong     Abonnez-vous à notre infolettre ou contactez l'équipe de Humain Humain pour discuter de votre prochain mandat en ethnographie sociale. 
  */
 ?>
 

@@ -1,16 +1,68 @@
 kirigami:
-  project: Humain Humain
-  baseurl: https://humainhumain.github.io
-  banner:  assets/banner.txt
-  root:    src
+  project:     Humain Humain
+  baseurl:     https://humainhumain.github.io
+  banner:      assets/banner.txt
+  root:        src
+
+  author:      Maxime Larrivée-Roy
+  person:      Méralie Murray-Hall
+  jobtitle:    Anthropologue
+  email:       meralie@humainhumain.com
+  facebook:    https://www.facebook.com/humainhumainconsultation.ethnographie/
+  area:        Québec, Canada
+  
+  description: Humain Humain est une firme de consultation en sciences sociales qui utilise l'ethnographie pour accompagner la transformation sociale et organisationnelle.
+  
+  knowsabout:
+    - Ethnographie
+    - Recherche qualitative
+    - Sciences sociales
+    - Transformation organisationnelle
+    - Consultation sociale
+  
+  keywords:
+    - ethnographie
+    - consultation publique
+    - enjeux sociaux
+    - sciences sociales
+    - Méralie Murray-Hall
+    - recherche qualitative
+    - transformation organisationnelle
+    - Montréal
+    - Québec
+    - anthropologie appliquée
+    - recherche qualitative
+    - sciences sociales
+    - observation participante
+    - entretiens semi-dirigés
+    - cartographie sociale
+    - méthodologie qualitative
+    - données probantes
+    - recherche terrain
+    - analyse socio-culturelle
+    - consultation ethnographique
+    - accompagnement organisationnel
+    - compréhension des milieux sociaux
+    - réflexivité organisationnelle
+    - pensée systémique
+    - changement organisationnel
+    - culture organisationnelle
+    - sous-cultures organisationnelles
+    - organizational ethnography
+    - qualitative research consulting
+    - applied anthropology
+    - ethnographic research firm
 
 export:
   path: dist
 
 prepros:
+  format: true
+  includes:
+    - _layouts/functions.php
   before: _layouts/header.php
   after:  _layouts/footer.php
-  format: true
+
 
 tasks:
 

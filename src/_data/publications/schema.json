@@ -1,0 +1,37 @@
+{
+	"@context": "https://schema.org",
+	"@type": "CollectionPage",
+	"name": "###TITLE###",
+	"url": "###ABSURL###",
+	"hasPart": [
+		{
+			"@type": "Report",
+			"name": "Consultation ethnographique et participative parc national de la Côte-de-Charlevoix",
+			"datePublished": "2026",
+			"url": "###BASEURL###publications/rapports/etude-ethnographique-Cote-de-Charlevoix.pdf"
+		},
+		{
+			"@type": "Report",
+			"name": "Portrait social de l'écosystème de la gigue au Québec",
+			"datePublished": "2026",
+			"url": "###BASEURL###publications/rapports/VF_RAPPORT FINAL_Portrait social de la gigue_15janvier2026.pdf"
+		},
+		{
+			"@type": "Report",
+			"name": "Pratiques informationnelles et besoins en matière de communication de l'arrondissement de Saint-Laurent",
+			"datePublished": "2025"
+		},
+		{
+			"@type": "Report",
+			"name": "Étude sur l'accès à la réparation : portrait de la réalité québécoise",
+			"datePublished": "2022",
+			"url": "###BASEURL###publications/rapports/EQT_rapport_entretiens-reparateurs.pdf"
+		},
+		{
+			"@type": "Report",
+			"name": "Portrait ethnographique du Village 2SLGBTQ+ de Montréal",
+			"datePublished": "2020",
+			"url": "###BASEURL###publications/rapports/HUMAINHUMAIN_EthnographieduVillage_SDC_6oct2020.pdf"
+		}
+	]
+}

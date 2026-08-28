@@ -1,0 +1,8 @@
+/* TEAM */
+Développement : Maxime Larrivée-Roy
+Contact : mlarriveeroy@gmail.com
+Site : https://zmotrin.github.io
+
+/* SITE */
+Généré avec : Kirigami
+Hébergé sur : GitHub Pages

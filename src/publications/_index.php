@@ -2,7 +2,9 @@
 /**
  * @id           publications
  * @title        Publications
+ * @breadcrumb   true
  * 
+ * @schema       ../_data/publications/schema.json
  * @ogimage      ../images/publications/ogdefault.webp
  * @descshort    Rapports et études publiées
  * @desclong     Consultez nos rapports de recherche ethnographique portant sur des enjeux sociaux, culturels et territoriaux au Québec.
