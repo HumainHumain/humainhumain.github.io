@@ -70,6 +70,13 @@ if(!empty($schema)) {
         <link rel="stylesheet" href="<?php echo $relroot; ?>styles/hh.core.min.css?###TIMESTAMP###">
         <title><?php echo STR::htmlesc($project); ?> | <?php echo STR::htmlesc($title); ?> | <?php echo STR::htmlesc($descshort); ?></title>
         <script src="<?php echo $relroot; ?>scripts/hh.core.min.js?###TIMESTAMP###"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo $gtag; ?>"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '<?php echo $gtag; ?>');
+        </script>
         <? if(!empty($shemabc)): ?>
         <script type="application/ld+json">
 <?php echo json_encode($shemabc, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE); ?>

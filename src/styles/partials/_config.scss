@@ -1,33 +1,30 @@
 @use "utils" as *;
 
-$color-white:  #f7ede0;
-$color-grey:   #383336;
-$color-blue:   #29b3b8;
-$color-green:  #213821;
-$color-yellow: #fca61c;
-$color-orange: #fc5933;
-$color-beige:  #c7a670;
 
-$color-fg: $color-grey;
-$color-bg: $color-beige;
+$font-base:         26;
+$font-break:        1200;
+$font-resp:         calc($font-base * 100 / $font-break);
 
-$color-white-bin:  hexbin($color-white);
-$color-blue-bin:   hexbin($color-blue);
-$color-grey-bin:   hexbin($color-grey);
-$color-yellow-bin: hexbin($color-yellow);
-$color-orange-bin: hexbin($color-orange);
+$font-family:       'Inter';
+$font-title:        'EB Garamond';
+$font-hero:         'Nazare';
 
-$color-a-hover:  $color-orange;
-$color-a-active: $color-white;
-$color-modal:    $color-blue;
+$color-white:        #f7ede0;
+$color-grey:         #383336;
+$color-blue:         #29b3b8;
+$color-green:        #213821;
+$color-yellow:       #fca61c;
+$color-orange:       #fc5933;
+$color-beige:        #c7a670;
 
+$color-white-bin:    hexbin($color-white);
+$color-blue-bin:     hexbin($color-blue);
+$color-grey-bin:     hexbin($color-grey);
+$color-yellow-bin:   hexbin($color-yellow);
+$color-orange-bin:   hexbin($color-orange);
 
-$font-family:  'Inter';
-$font-title:   'EB Garamond';
-$font-hero:    'Nazare';
-
-// $font-mobile: 32;
-$font-base:   26;
-$font-break:  1200;
-$font-resp:   calc($font-base * 100 / $font-break);
-// $font-resp-mobile: calc($font-mobile * 100 / $font-break);
+$color-fg:           $color-grey;
+$color-bg:           $color-beige;
+$color-a-hover:      $color-orange;
+$color-a-active:     $color-white;
+$color-modal:        $color-blue;
