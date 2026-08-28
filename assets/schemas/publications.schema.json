@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemas/publications.schema.json",
+  "title": "Publications",
+  "description": "Liste des publications, études et rapports, avec leurs éventuelles retombées médiatiques.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "title": "Publication",
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "Titre de la publication.",
+        "minLength": 1
+      },
+      "file": {
+        "type": "string",
+        "description": "Nom du fichier PDF de la publication, ou '__SUR_DEMANDE__' si le document n'est pas disponible publiquement.",
+        "minLength": 1
+      },
+      "image": {
+        "type": "string",
+        "description": "Nom du fichier image associé à la publication.",
+        "pattern": "\\.(webp|png|jpg|jpeg|svg)$"
+      },
+      "thumb": {
+        "type": "string",
+        "description": "Nom du fichier miniature (thumbnail) associé à la publication.",
+        "pattern": "\\.(webp|png|jpg|jpeg|svg)$"
+      },
+      "medias": {
+        "type": "array",
+        "description": "Liste des articles ou reportages médiatiques mentionnant la publication.",
+        "items": {
+          "type": "object",
+          "title": "Media",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Titre de l'article ou du reportage.",
+              "minLength": 1
+            },
+            "date": {
+              "type": "string",
+              "description": "Date de publication (mois et année, en toutes lettres).",
+              "minLength": 1
+            },
+            "news": {
+              "type": "string",
+              "description": "Nom du média ayant publié l'article ou le reportage.",
+              "minLength": 1
+            },
+            "url": {
+              "type": "string",
+              "description": "URL de l'article ou du reportage.",
+              "format": "uri",
+              "pattern": "^https?://"
+            }
+          },
+          "required": ["name", "date", "news", "url"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": ["name", "file", "image", "thumb"],
+    "additionalProperties": false
+  },
+  "minItems": 1
+}

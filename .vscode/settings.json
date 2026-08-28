@@ -6,6 +6,9 @@
     "terminal.integrated.env.osx": {
         "PATH": "${env:PATH}:${workspaceFolder}:${workspaceFolder}/node_modules/.bin"
     },
+    "terminal.integrated.env.linux": {
+        "PATH": "${env:PATH}:${workspaceFolder}:${workspaceFolder}/node_modules/.bin"
+    },
     "intelephense.environment.includePaths": [
         "node_modules/@kirigami/prepros"
     ],
@@ -14,10 +17,10 @@
         "**/node_modules/**",
         "!**/node_modules/@kirigami/prepros/**"
     ],
-    // "yaml.schemas": {
-    //     "./assets/shemas/articles.schema.json": "_articles.yaml",
-    //     "./assets/shemas/equipe.schema.json": "_equipe.yaml"
-    // },
+    "yaml.schemas": {
+        "./assets/schemas/collaborations.schema.json": "collaborations.yaml",
+        "./assets/schemas/publications.schema.json": "publications.yaml"
+    },
     "liveServer.settings.port": 5515,
     "liveServer.settings.CustomBrowser": "chrome",
     "liveServer.settings.root": "./src/",
@@ -40,7 +43,7 @@
             "color": "cyan"
         },
         {
-            "path": "scripts",
+            "path": "assets",
             "color": "magenta"
         }
     ]

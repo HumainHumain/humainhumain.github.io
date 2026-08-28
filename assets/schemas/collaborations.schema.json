@@ -1,0 +1,36 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://example.com/schemas/collaborations.schema.json",
+	"title": "Collaborations",
+	"description": "Liste des collaborations, partenaires et organismes associés au projet.",
+	"type": "array",
+	"items": {
+		"type": "object",
+		"title": "Collaboration",
+		"properties": {
+			"name": {
+				"type": "string",
+				"description": "Nom de l'organisme ou du partenaire.",
+				"minLength": 1
+			},
+			"image": {
+				"type": "string",
+				"description": "Nom du fichier image (logo) associé, généralement un SVG.",
+				"pattern": "\\.(svg|png|jpg|jpeg|webp)$"
+			},
+			"url": {
+				"type": "string",
+				"description": "URL du site ou de la page associée à la collaboration.",
+				"format": "uri",
+				"pattern": "^https?://"
+			}
+		},
+		"required": [
+			"name",
+			"image",
+			"url"
+		],
+		"additionalProperties": false
+	},
+	"minItems": 1
+}
