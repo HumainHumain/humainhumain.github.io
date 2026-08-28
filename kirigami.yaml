@@ -63,7 +63,6 @@ prepros:
   before: _layouts/header.php
   after:  _layouts/footer.php
 
-
 tasks:
 
   - name:  js-core

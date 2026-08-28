@@ -53,6 +53,10 @@ if(!empty($schema)) {
         <meta name="generator" content="Kirigami">
         <meta name="author" content="<?php echo STR::htmlesc($author); ?>">
         <meta name="designer" content="<?php echo STR::htmlesc($author); ?>">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="<?php echo STR::htmlesc($project); ?> | <?php echo STR::htmlesc($title); ?> | <?php echo STR::htmlesc($descshort); ?>">
+        <meta name="twitter:description" content="<?php echo STR::htmlesc($desclong); ?>">
+        <meta name="twitter:image" content="<?php echo $ogimage; ?>">
         <meta property="og:site_name" content="<?php echo STR::htmlesc($project); ?>">
         <meta property="og:locale" content="fr_CA">
         <meta property="og:type" content="website">
@@ -60,10 +64,6 @@ if(!empty($schema)) {
         <meta property="og:description" content="<?php echo STR::htmlesc($desclong); ?>">
         <meta property="og:url" content="<?php echo $pageurl; ?>">
         <meta property="og:image" content="<?php echo $ogimage; ?>">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="<?php echo STR::htmlesc($project); ?> | <?php echo STR::htmlesc($title); ?> | <?php echo STR::htmlesc($descshort); ?>">
-        <meta name="twitter:description" content="<?php echo STR::htmlesc($desclong); ?>">
-        <meta name="twitter:image" content="<?php echo $ogimage; ?>">
         <link rel="canonical" href="<?php echo $pageurl; ?>">
         <link rel="author" type="text/plain" href="<?php echo $relroot; ?>humans.txt">
         <link rel="icon" type="image/x-icon" href="<?php echo $relroot; ?>favicon.ico">

@@ -4,7 +4,7 @@
 		{
 			"label": "kiri:watch",
 			"type": "shell",
-			"command": "kiri watch",
+			"command": "npx kiri watch",
 			"isBackground": true,
 			"runOptions": {
 				"runOn": "folderOpen",

@@ -1,10 +1,10 @@
 {
     "terminal.integrated.enablePersistentSessions": false,
     "terminal.integrated.env.windows": {
-        "PATH": "${workspaceFolder}\\node_modules\\.bin;${env:PATH};${workspaceFolder}"
+        "PATH": "${env:PATH};${workspaceFolder};${workspaceFolder}\\node_modules\\.bin"
     },
     "terminal.integrated.env.osx": {
-        "PATH": "${workspaceFolder}/node_modules/.bin:${env:PATH}:${workspaceFolder}"
+        "PATH": "${env:PATH}:${workspaceFolder}:${workspaceFolder}/node_modules/.bin"
     },
     "intelephense.environment.includePaths": [
         "node_modules/@kirigami/prepros"
