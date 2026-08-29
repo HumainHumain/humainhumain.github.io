@@ -11,13 +11,13 @@ if(!empty($breadcrumb) && boolval($breadcrumb)) {
         'itemListElement' => [
             [
                 '@type' => 'ListItem',
-                '@position' => 1,
+                'position' => 1,
                 'name' => $accueil->title,
                 'item' => $baseurl . '/'
             ],
             [
                 '@type' => 'ListItem',
-                '@position' => 1,
+                'position' => 2,
                 'name' => $title,
                 'item' => $pageurl
             ],
