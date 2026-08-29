@@ -18,7 +18,7 @@
  */
 ?>
 
-<section class="splash-services">Services</section>
+<section class="splash-services"><h1>Services</h1></section>
 
 <section class="services-slideshow"></section>
 

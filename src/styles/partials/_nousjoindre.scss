@@ -9,16 +9,10 @@
 
 	width: 100dhw;
 	height: calc(100dvh - var(--scroll-top));
+	background-size: auto 75%;
 	background-repeat: no-repeat;
 	background-position: center;
 	resize: both;
-
-	background-size: auto 75%;
-
-	font-family: var(--font-hero);
-	font-size: 6rem;
-	color: var(--color-white);
-	text-transform: uppercase;
 
 	animation-name: splash-nousjoindre;
 	animation-duration: 10s;
@@ -26,6 +20,13 @@
 	animation-timing-function: ease-in-out;
 	animation-delay: -320ms;
 
+	h1 {
+		font-family: var(--font-hero);
+		font-size: 6rem;
+		color: var(--color-white);
+		text-transform: uppercase;
+		user-select: none;
+	}
 
 }
 

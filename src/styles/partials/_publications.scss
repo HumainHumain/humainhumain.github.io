@@ -12,17 +12,19 @@
 	background-position: center;
 	background-size: 80%;
 
-	font-family: var(--font-hero);
-	font-size: 5rem;
-	color: var(--color-white);
-	text-transform: uppercase;
-
-
 	animation-name: splash-publications;
 	animation-duration: 10s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
 	animation-delay: -320ms;
+
+	h1 {
+		font-family: var(--font-hero);
+		font-size: 5rem;
+		color: var(--color-white);
+		text-transform: uppercase;
+		user-select: none;
+	}
 
 }
 

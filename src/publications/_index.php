@@ -13,7 +13,7 @@
  */
 ?>
 
-<section class="splash-publications">Publications</section>
+<section class="splash-publications"><h1>Publications</h1></section>
 
 <section class="publications-slideshow"></section>
 

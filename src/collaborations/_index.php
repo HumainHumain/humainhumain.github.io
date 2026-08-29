@@ -13,7 +13,7 @@
  */
 ?>
 
-<section class="splash-collaborations">Collaborations</section>
+<section class="splash-collaborations"><h1>Collaborations</h1></section>
 
 <section class="collaborations-slideshow"></section>
 

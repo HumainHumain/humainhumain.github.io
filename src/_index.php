@@ -16,7 +16,7 @@
  */
 ?>
 
-<section class="splash-accueil"></section>
+<section class="splash-accueil"><h1>Humain Humain</h1></section>
 <section class="slideshow-accueil"></section>
 <section class="qui-sommes-nous-accueil">
     <?php echo $apropos; ?>

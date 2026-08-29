@@ -18,7 +18,7 @@
  */
 ?>
 
-<section class="splash-expertise">Expertise</section>
+<section class="splash-expertise"><h1>Expertise</h1></section>
 
 <section class="expertise-slideshow"></section>
 

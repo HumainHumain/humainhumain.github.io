@@ -14,7 +14,7 @@
  */
 ?>
 
-<section class="splash-nousjoindre">Nous<br>joindre</section>
+<section class="splash-nousjoindre"><h1>Nous<br>joindre</h1></section>
 
 <section class="nousjoindre-slideshow"></section>
 
