@@ -2,7 +2,7 @@ import Modal from '../libraries/modal';
 
 export default class Publications {
 
-	modal =null;
+	modal = null;
 
 	constructor() {
 		this.init();
