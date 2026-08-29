@@ -67,8 +67,9 @@ if(!empty($schema)) {
         <link rel="canonical" href="<?php echo $pageurl; ?>">
         <link rel="author" type="text/plain" href="<?php echo $relroot; ?>humans.txt">
         <link rel="icon" type="image/x-icon" href="<?php echo $relroot; ?>favicon.ico">
+        <link rel="apple-touch-icon" type="image/png" href="<?php echo $relroot; ?>apple-touch-icon.png">
         <link rel="stylesheet" href="<?php echo $relroot; ?>styles/hh.core.min.css?###TIMESTAMP###">
-        <title><?php echo STR::htmlesc($project); ?> | <?php echo STR::htmlesc($title); ?> | <?php echo STR::htmlesc($descshort); ?></title>
+        <title><?php echo STR::htmlesc($project); ?> | <?php echo STR::htmlesc($title); ?></title>
         <script src="<?php echo $relroot; ?>scripts/hh.core.min.js?###TIMESTAMP###"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo $gtag; ?>"></script>
         <script>
