@@ -1,6 +1,7 @@
 @use 'sass:color';
 @use 'config' as *;
 
+
 @property --sphere-offset {
   syntax: '<percentage>';
   initial-value: 0%;
@@ -25,28 +26,22 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-family);
-    // letter-spacing: var(--font-spacing);
 }
 
 
 html {
     scroll-behavior: smooth;
     scroll-padding-top: var(--scroll-top);;
-    
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
     font-size: var(--font-size);
 
-    // @media (orientation: portrait) {
-    //     font-size: var(--font-size-mobile);
-    // }
-
-    &.is-busy,
-    &.is-busy * {
+    &.is-busy, &.is-busy * {
         cursor: wait !important;
         pointer-events: none !important;
     }
 
-    &.is-working,
-    &.is-working * {
+    &.is-working, &.is-working * {
         cursor: progress !important;
         pointer-events: none !important;
     }
@@ -106,7 +101,7 @@ header {
             justify-content: center;
             // background-color: blue;
             // -webkit-text-size-adjust: 100%;
-            -webkit-text-size-adjust: none;
+            // -webkit-text-size-adjust: none;
 
 
             &:hover {
