@@ -1,4 +1,4 @@
-### Placemaking & évènementiel
+### Placemaking & évènementiel {#placemaking}
 
 **Un processus de placemaking efficace doit impliquer les collectivités au tout début afin de définir les priorités et la vision du projet, mais aussi les maintenir impliquées tout au long de la mise en œuvre et au-delà.**
 

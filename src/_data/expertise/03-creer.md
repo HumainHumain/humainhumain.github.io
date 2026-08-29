@@ -1,4 +1,4 @@
-### Créer des ponts entre les silos
+### Créer des ponts entre les silos {#creer}
 
 **En rencontrant directement les gens en face-à-face et en créant des liens de qualité, nos professionnel·le·s de l’ethnographie contribuent à la cohésion sociale et réduisent les clivages entre les différentes communautés, cultures et sous-cultures.**
 

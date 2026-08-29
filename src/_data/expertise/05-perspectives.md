@@ -1,4 +1,4 @@
-### Perspectives critiques et vision macro
+### Perspectives critiques et vision macro {#perspectives}
 
 **Vous cherchez à avoir du recul et de la perspective sur de récentes problématiques ou initiatives ?**
 

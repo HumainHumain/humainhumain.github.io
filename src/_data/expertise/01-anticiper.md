@@ -1,4 +1,4 @@
-### Anticiper les défis et faire émerger les scénarios alternatifs
+### Anticiper les défis et faire émerger les scénarios alternatifs {#anticiper}
 
 **Vous désirez conserver votre pertinence, votre force d’impact et vous cherchez à identifier les meilleures stratégies pour assurer la pérennité de votre organisation ?**
 

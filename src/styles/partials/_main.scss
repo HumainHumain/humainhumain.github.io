@@ -31,7 +31,8 @@
 
 html {
     scroll-behavior: smooth;
-    // scroll-padding-top: 2.5rem;
+    scroll-padding-top: var(--scroll-top);;
+    
     font-size: var(--font-size);
 
     // @media (orientation: portrait) {
@@ -55,7 +56,6 @@ html {
 body {
     position: relative;
     color: var(--color-fg);
-    // // background-color: var(--color-bg);
     overflow-x: hidden;
     padding-top: var(--scroll-top);
     display: flex;
@@ -63,9 +63,7 @@ body {
     min-height: 100dvh;
     max-width: 100%;
     -webkit-text-size-adjust: 100%;
-
 	background-color: var(--color-bg);
-
 }
 
 
@@ -175,7 +173,7 @@ header {
 
     header {
         background-color: var(--color-bg);
-        height: 5rem;
+        height: 6rem;
     }
 
     header > nav {
@@ -214,8 +212,8 @@ header {
     header > .burger {
         display: block;
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 0.5rem;
+        right: 0.5rem;
         cursor: pointer;
 
         width: 5rem;
@@ -241,8 +239,8 @@ header {
     header > .logo-humain {
         display: block;
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 0.5rem;
+        left: 0.5rem;
 
         height: 5rem;
         aspect-ratio: 1200 / 385;
@@ -292,313 +290,6 @@ main {
     section {
 
         overflow-x: hidden;
-
-        &.splash-accueil {
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            width: 100dvw;
-            height: calc(100dvh - var(--scroll-top));
-            // background-color: red;
-            background-image: var(--splash-accueil);
-            background-repeat: no-repeat;
-            background-position: center;
-            resize: both;
-
-            background-size: auto 75%;
-            @media (orientation: portrait) {
-                background-size: 75% auto;
-            }
-
-            animation-name: splash-accueil;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-            animation-delay: -325ms;
-
-            @media (orientation: portrait) {
-                animation-timing-function: steps(1);
-            }
-
-            &::after {
-                content: "";
-                position: absolute;
-                max-width: 65%;
-                max-height: 65%;
-                width: 100%;
-
-                aspect-ratio: 1553 / 705;
-                background-image: var(--splash-accueil-text);
-                background-repeat: no-repeat;
-                background-size: contain;
-                z-index: 1;
-                // background-color: blue;
-            }
-
-        }
-
-        &.slideshow-accueil {
-            background-image: url(../images/accueil/slideshow/immeuble_quartier.webp);
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
-            // aspect-ratio: 3 / 2;
-            width: 100dvw;
-            height: calc(100dvh - var(--scroll-top));
-            
-            @media (orientation: portrait) {
-                aspect-ratio: 3 / 2;
-                height: auto;
-            }
-
-            &.meralie {
-                background-image: url(../images/accueil/meralie/00-large.webp);
-            }
-
-        }
-
-        &.qui-sommes-nous-accueil {
-
-            --sphere-offset: -52%;
-            // width: 100%
-            position: relative;
-            background-color: var(--color-green);
-            background-repeat: no-repeat;
-            color: var(--color-yellow);
-            padding: 4rem 5% 4rem 20%;
-
-            em {
-                font-weight: 600;
-                text-shadow: 0 0 0.1rem #{color.adjust($color-grey, $alpha: -0.25)}; //, 0 0 0.2rem #{color.adjust($color-white, $alpha: -0.25)};
-            }
-
-            &:has(em:hover) {
-                // background-color: red;
-                --sphere-offset: -25%;
-                
-            }
-
-            &::before {
-                content: "";
-                position: absolute;
-                left: 0%;
-                top: 50%;
-                transform: translate(-75%, -50%);
-                aspect-ratio: 1 / 1;
-                height: 70%;
-                border-radius: 50%;
-                background: var(--color-yellow);
-                background-image: var(--demi-sphere);
-                background-position: 23% center;
-                background-repeat: no-repeat;
-                background-size: contain;
-                max-height: 30rem;
-
-                
-                // &:hover {
-                //     // background-color: red;
-                //     --sphere-offset: -52%;
-                // }
-            }
-
-            &::after {
-                content: "";
-                position: absolute;
-                left: 0%;
-                top: 50%;
-                transform: translate(var(--sphere-offset), -50%);
-                aspect-ratio: 1 / 1;
-                height: 80%;
-                border-radius: 50%;
-                // background: red;
-                background-image: var(--demi-sphere);
-                background-repeat: no-repeat;
-                transition: transform 200ms;
-                max-height: 30rem;
-            }
-
-
-            img {
-                position: relative;
-                display: block;
-                width: 12rem;
-                border-radius: 50%;
-                border: 0.5rem solid var(--color-yellow);
-                transition-property: border;
-			    transition-duration: 100ms;
-                // margin-top: 1rem;
-                margin: 1rem 0 0 auto;
-                cursor: pointer;
-
-                // &:not(:last-of-type) {
-                //     margin-right: 2.5rem;
-                // }
-
-                &:hover {
-                    border: 0.75rem solid var(--color-yellow);
-                }
-            }
-        }
-
-
-        &.qu-est-ce-que-l-ethnographie-accueil {
-            --sphere-offset-right: 52%;
-
-            position: relative;
-            background-color: var(--color-grey);
-            color: var(--color-white);
-            padding: 4rem 20% 4rem 5%;
-
-            &::before {
-                content: "";
-                position: absolute;
-                right: 0%;
-                top: 50%;
-                transform: translate(75%, -50%);
-                aspect-ratio: 1 / 1;
-                height: 70%;
-                border-radius: 50%;
-                background: var(--color-orange);
-                max-height: 30rem;
-            }
-
-            &::after {
-                content: "";
-                position: absolute;
-                right: 0%;
-                top: 50%;
-                transform: translate(var(--sphere-offset-right), -50%) scaleX(-1);
-                aspect-ratio: 1 / 1;
-                height: 80%;
-                border-radius: 50%;
-                // background: red;
-                background-image: var(--demi-sphere);
-                background-repeat: no-repeat;
-                transition: transform 200ms;
-                max-height: 30rem;
-            }
-
-
-            &:has(blockquote:hover) {
-                // background-color: red;
-                --sphere-offset-right: 25%;
-                
-            }
-
-
-        }
-
-
-
-
-        &.approche {
-            // width: 100%
-            position: relative;
-
-            background-color: var(--color-white);
-            color: var(--color-grey);
-            padding: 4rem 5% 4rem 20%;
-
-            &::before {
-                content: "";
-                position: absolute;
-                left: 0%;
-                top: 50%;
-                transform: translate(-75%, -50%);
-                aspect-ratio: 1 / 1;
-                height: 70%;
-                border-radius: 50%;
-                background: var(--color-blue);
-                max-height: 30rem;
-            }
-
-            img {
-                width: 8rem;
-                border-radius: 50%;
-                border: 0.5rem solid var(--color-yellow);
-                margin-top: 1rem;
-                &:not(:last-of-type) {
-                    margin-right: 2.5rem;
-                }
-            }
-        }
-
-
-
-
-
-        &.quote {
-            position: relative;
-            background-color: var(--color-blue);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 3rem;
-
-            // width: 100dvw;
-            // height: 100dvh;
-
-            &.yellow {
-                background-color: var(--color-yellow);
-            }
-
-
-            & > div {
-                position: relative;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                padding: 1rem;
-
-                background-color: var(--color-grey);
-
-                color: var(--color-white);
-                border-radius: 50%;
-                aspect-ratio: 1 / 1;
-
-                // font-size: calc(1rem * 10dvw);
-                font-size: 1.3rem;
-                // height: 100%;
-                // max-width: 75%;
-                // max-height: 75%;
-            }
-
-
-            &::before {
-                content: "";
-                position: absolute;
-                left: 0%;
-                top: 50%;
-                transform: translate(-50%, -50%);
-                aspect-ratio: 1 / 2;
-                height: 80%;
-                // border-radius: 50%;
-                // background: #f0a020;
-                background-image: var(--demi-sphere);
-				background-repeat: no-repeat;
-				background-position: center center;
-				background-size: contain;
-
-            }
-            &::after {
-                content: "";
-                position: absolute;
-                right: 0%;
-                top: 50%;
-                transform: translate(50%, -50%) scaleX(-1);
-                aspect-ratio: 1 / 2;
-                height: 80%;
-                background-image: var(--demi-sphere);
-				background-repeat: no-repeat;
-				background-position: center center;
-				background-size: contain;
-            }
-
-        }
-
 
     }
 
@@ -761,30 +452,6 @@ footer {
     }
 
 }
-
-
-// footer > div:nth-child(1) {
-//     // background-color: red;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-
-//     user-select: none;
-//     // filter: grayscale(100);
-//     color: var(--color-white);
-//     z-index: -1;
-
-//     &::before {
-//         content: '';
-//         height: 2em;
-//         aspect-ratio: 132/150;
-//         background-image: var(--logo-ii);
-//         background-size: contain;
-//         background-position: left center;
-//         background-repeat: no-repeat;
-//         margin-right: 0.5em;
-//     }
-// }
 
 
 .arrowup {

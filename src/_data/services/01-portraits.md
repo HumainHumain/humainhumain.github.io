@@ -1,4 +1,4 @@
-### Portraits sociaux
+### Portraits sociaux {#portraits}
 
 **Vous tentez de dénouer des crises ou d’anticiper des transformations majeures dans votre secteur d’activité ?**
 

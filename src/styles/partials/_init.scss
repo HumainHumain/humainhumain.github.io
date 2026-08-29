@@ -61,9 +61,3 @@
 	--check-mark:              url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24'%3E%3Cpath fill='%23#{$color-yellow-bin}' fill-rule='evenodd' d='M1 12a11 11 0 1 1 22 0 11 11 0 0 1-22 0m17.4-2.3q.6-.7 0-1.4l-.7-.7a1 1 0 0 0-1.4 0l-5.8 5.8L7.2 10a1 1 0 0 0-1.4 0l-.7.7a1 1 0 0 0 0 1.4L9.8 17q.7.6 1.4 0z' clip-rule='evenodd'/%3E%3C/svg%3E");
 }
 
-
-@media (orientation: portrait) {
-    :root {
-		--scroll-top: 5rem;
-	}
-}

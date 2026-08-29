@@ -1,4 +1,4 @@
-### Architecture & urbanisme
+### Architecture & urbanisme {#architecture}
 
 **L’ethnographie peut jouer le rôle d’une préconsultation en amont d’un projet de conception.**
 

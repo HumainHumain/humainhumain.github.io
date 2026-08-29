@@ -19,32 +19,6 @@
 				color: var(--color-grey);
 			}
 
-			form {
-				padding: 0 20dvw;
-			}
-
-			label {
-				font-weight: 600;
-			}
-
-			input[type="email"] {
-				width: 12rem;
-				font-family: var(--font-family);
-				font-size: 0.8rem;
-				border: 0;
-				padding: 0.2rem;
-				color: var(--color-grey);
-			}
-
-			.paperplane {
-				width: 1rem;
-				aspect-ratio: 1 / 1;
-				background-image: var(--paperplane);
-				border: none;
-				background-color: transparent;
-				cursor: pointer;
-				transform: translateY(12%);
-			}
 
 			div {
 				padding: 0 20dvw;
@@ -60,6 +34,16 @@
 				transform: translateY(10%);
 				margin-right: 0.5rem;
 				filter: drop-shadow(0 0 0.1rem var(--color-grey));
+			}
+
+			@media screen and (max-width: 767px) {
+				body {
+					font-size: 1.4rem;
+				}
+
+				div::before {
+					width: 1.4rem;
+				}
 			}
 		</style>
 	</head>

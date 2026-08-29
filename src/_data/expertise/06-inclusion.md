@@ -1,4 +1,4 @@
-### Inclusion des personnes difficiles d’accès
+### Inclusion des personnes difficiles d’accès {#inclusion}
 
 **Un projet ayant fait l’objet d’un accompagnement ethnographique permet d’avoir un impact social inclusif qui tienne compte de la diversité des individus constituant le tissu social.**
 

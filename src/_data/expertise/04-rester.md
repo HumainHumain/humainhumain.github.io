@@ -1,4 +1,4 @@
-### Rester à l’affût des nouveaux modes d’être ensemble
+### Rester à l’affût des nouveaux modes d’être ensemble {#rester}
 
 **L’analyse des mouvements sociaux montre que des formes alternatives de lien social sont sans cesse créées.**
 

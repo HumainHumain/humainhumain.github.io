@@ -1,0 +1,228 @@
+	@media (orientation: portrait) {
+        // === MAIN ===
+
+		:root {
+			--scroll-top: 6rem;
+		}
+
+		footer {
+			font-size: 1.2rem;
+			& > div:nth-child(5) {
+				gap: 1rem;
+				.email,
+				.facebook {
+					width: 2rem;
+				}
+			}
+		}
+
+		h2 {
+			font-size: 4rem;
+		}
+
+		// === ACCUEIL ===
+
+		.splash-accueil {
+			background-size: 75% auto;
+			animation-timing-function: steps(1);
+		}
+
+		.slideshow-accueil {
+			aspect-ratio: 1 / 1;
+			height: auto;
+		}
+
+		.qui-sommes-nous-accueil {
+			font-size: 1.3rem;
+		}
+
+		.quote > div {
+			font-size: 1.6rem;
+		}
+
+
+		.qu-est-ce-que-l-ethnographie-accueil {
+			font-size: 1.3rem;
+		}
+
+		.approche {
+			font-size: 1.3rem;
+			
+			padding: 4rem 5% 4rem 10%;
+			
+			&::before {
+				
+				transform: translate(-55%, -50%);
+				max-height: 40rem;
+			}
+		}
+
+
+		// ### EXPERTISES ###
+
+		.splash-expertise {
+			animation-timing-function: steps(1);
+		}
+
+		.expertise-slideshow {
+			aspect-ratio: 1 / 1;
+			height: auto;
+		}
+
+		.expertise-index {
+			aspect-ratio: 1 / 1;
+			padding: 2rem;
+			gap: 1rem;
+			& > div {
+				width: 12rem;
+
+				& > div:last-child {
+					font-weight: 600;
+					margin-top: 0.5rem;
+					font-size: 1.3rem;
+
+				}
+			
+			}
+
+		}
+
+		
+		.expertise-section {
+			padding: 4rem 10% 4rem 25%;
+			font-size: 1.3rem;
+			h3 {
+				font-size: 3rem;
+				line-height: 3.2rem;
+			}
+		}
+
+		.expertise-section-right {
+		
+			font-size: 1.3rem;
+			h3 {
+				font-size: 3rem;
+				line-height: 3.2rem;
+			}
+		}
+
+
+
+		// ### SERVICES ###
+		
+		.splash-services {
+			animation-timing-function: steps(1);
+		}
+
+		.services-slideshow {
+			aspect-ratio: 1 / 1;
+			height: auto;
+		}
+
+		.services-index {
+			padding: 2rem;
+			gap: 1rem;
+			& > div {
+				width: 12rem;
+
+				& > div:last-child {
+					font-weight: 600;
+					margin-top: 0.5rem;
+					font-size: 1.3rem;
+
+				}
+			
+			}
+
+		}
+
+		.services-section {
+			padding: 4rem 10% 4rem 25%;
+			font-size: 1.3rem;
+			h3 {
+				font-size: 3rem;
+				line-height: 3.2rem;
+			}
+		}
+
+		.services-section-right {
+		
+			font-size: 1.3rem;
+			h3 {
+				font-size: 3rem;
+				line-height: 3.2rem;
+			}
+		}
+
+
+
+
+		// ### PUBLICATIONS ###
+		
+		.splash-publications {
+			animation-timing-function: steps(1);
+		}
+
+		.publications-slideshow {
+			aspect-ratio: 1 / 1;
+			height: auto;
+		}
+
+		.publications-section {
+			font-size: 1.3rem;
+			h4 {
+				font-size: 2rem;
+				line-height: 2.2rem;
+			}
+
+			h5 {
+				font-size: 1.8rem;
+			}
+
+			ul {
+				li:not(:first-child) {
+					margin-top: 1rem;
+				}
+			}
+
+			& > div:nth-child(1) {
+				font-size: 1rem;
+			
+			}
+		}
+
+
+		// ### COLLABORATIONS ###
+		
+		.splash-collaborations {
+			animation-timing-function: steps(1);
+		}
+
+		.collaborations-slideshow {
+			aspect-ratio: 1 / 1;
+			height: auto;
+		}
+
+
+		// ### NOUS JOINDRE ###
+		
+		.splash-nousjoindre {
+			background-size: 75% auto;
+			animation-timing-function: steps(1);
+		}
+
+		.nousjoindre-slideshow {
+			aspect-ratio: 1 / 1;
+			height: auto;
+		}
+
+		.nousjoindre-form {
+			font-size: 1.3rem;
+			h3 {
+				font-size: 3rem;
+				line-height: 3.2rem;
+			}
+		}
+
+
+    }

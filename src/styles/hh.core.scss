@@ -1,6 +1,7 @@
 @use "partials/fonts";
 @use "partials/init";
 @use "partials/main";
+@use "partials/accueil";
 @use "partials/expertise";
 @use "partials/services";
 @use "partials/publications";
@@ -8,3 +9,4 @@
 @use "partials/nousjoindre";
 @use "partials/modal";
 @use "partials/credits";
+@use "partials/mobile";

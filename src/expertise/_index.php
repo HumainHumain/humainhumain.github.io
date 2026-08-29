@@ -49,32 +49,32 @@
 	</div>
 </section>
 
-<section class="expertise-section" id="anticiper" data-hover="out">
+<section class="expertise-section" data-hover="out">
 	<?php echo $anticiper; ?>
 	<div class="arrowup"><div title="Remonter"></div></div>
 </section>
 
-<section class="expertise-section-right" id="saisir" data-hover="out">
+<section class="expertise-section-right" data-hover="out">
 	<?php echo $saisir; ?>
 	<div class="arrowup"><div title="Remonter"></div></div>
 </section>
 
-<section class="expertise-section" id="creer" data-hover="out">
+<section class="expertise-section" data-hover="out">
 	<?php echo $creer; ?>
 	<div class="arrowup"><div title="Remonter"></div></div>
 </section>
 
-<section class="expertise-section-right" id="rester" data-hover="out">
+<section class="expertise-section-right" data-hover="out">
 	<?php echo $rester; ?>
 	<div class="arrowup"><div title="Remonter"></div></div>
 </section>
 
-<section class="expertise-section" id="perspectives" data-hover="out">
+<section class="expertise-section" data-hover="out">
 	<?php echo $perspectives; ?>
 	<div class="arrowup"><div title="Remonter"></div></div>
 </section>
 
-<section class="expertise-section-right" id="inclusion" data-hover="out">
+<section class="expertise-section-right" data-hover="out">
 	<?php echo $inclusion; ?>
 	<div class="arrowup"><div title="Remonter"></div></div>
 </section>

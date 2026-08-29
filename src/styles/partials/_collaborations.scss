@@ -1,4 +1,4 @@
-section.splash-collaborations {
+.splash-collaborations {
 
 	display: flex;
 	position: relative;
@@ -22,10 +22,6 @@ section.splash-collaborations {
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
 	animation-delay: -320ms;
-
-	@media (orientation: portrait) {
-        animation-timing-function: steps(1);
-    }
 
 }
 
@@ -62,10 +58,6 @@ section.splash-collaborations {
 	background-size: cover;
 	width: 100%;
 	height: 100vh;
-	@media (orientation: portrait) {
-		aspect-ratio: 3 / 2;
-		height: auto;
-	}
 }
 
 

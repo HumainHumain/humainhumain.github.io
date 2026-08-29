@@ -1,4 +1,4 @@
-### Innovation sociale
+### Innovation sociale {#innovation}
 
 **L’ethnographie contribue au succès de projets à portée sociale en optimisant leur potentiel d’appropriation à long terme.**
 

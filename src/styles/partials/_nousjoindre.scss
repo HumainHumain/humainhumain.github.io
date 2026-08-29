@@ -1,6 +1,5 @@
-section.splash-nousjoindre {
+.splash-nousjoindre {
 
-	// background-color: red;
 
 	display: flex;
 	position: relative;
@@ -9,19 +8,12 @@ section.splash-nousjoindre {
 	position: relative;
 
 	width: 100dhw;
-	// height: 100dvh;
 	height: calc(100dvh - var(--scroll-top));
-	// background-color: red;
-	// background-image: var(--splash-nousjoindre);
 	background-repeat: no-repeat;
 	background-position: center;
 	resize: both;
 
 	background-size: auto 75%;
-	// background-size: calc(75% * 3 / 2) calc(50% * 3 / 2) ;
-	@media (orientation: portrait) {
-		background-size: 75% auto;
-	}
 
 	font-family: var(--font-hero);
 	font-size: 6rem;
@@ -34,9 +26,6 @@ section.splash-nousjoindre {
 	animation-timing-function: ease-in-out;
 	animation-delay: -320ms;
 
-	@media (orientation: portrait) {
-        animation-timing-function: steps(1);
-    }
 
 }
 
@@ -70,10 +59,6 @@ section.splash-nousjoindre {
 	background-size: cover;
 	width: 100%;
 	height: 100vh;
-	@media (orientation: portrait) {
-		aspect-ratio: 3 / 2;
-		height: auto;
-	}
 }
 
 
@@ -95,19 +80,8 @@ section.splash-nousjoindre {
 		z-index: 10;
 	}
 
-	// & > div {
-	// 	display: flex;
-	// 	align-items: center;
-	// 	justify-content: center;
-	// 	text-align: center;
-	// 	padding: 1rem;
 
-	// 	background-color: var(--color-grey);
 
-	// 	color: var(--color-white);
-	// 	border-radius: 50%;
-	// 	aspect-ratio: 1 / 1;
-	// }
 
 
 	& > .infolettre, & > .contact {
@@ -122,14 +96,13 @@ section.splash-nousjoindre {
 		a, em {
 			font-weight: 600;
 			color: var(--color-yellow);
-			text-shadow: 0 0 0.1rem var(--color-grey); //, 0 0 0.2rem #{color.adjust($color-white, $alpha: -0.25)};
+			text-shadow: 0 0 0.1rem var(--color-grey);
 		}
 
 	}
 
 	iframe {
 		width: 100%;
-		// aspect-ratio: 3 / 2;
 		height: 5rem;
 		margin-bottom: 1rem;
 		border: none;
@@ -146,8 +119,6 @@ section.splash-nousjoindre {
 		transform: translate(-50%, -50%);
 		aspect-ratio: 1 / 2;
 		height: 80%;
-		// border-radius: 50%;
-		// background: #f0a020;
 		background-image: var(--demi-sphere);
 		background-repeat: no-repeat;
 		background-position: center center;

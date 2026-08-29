@@ -22,7 +22,7 @@
 	
 	<div class="infolettre"><?php echo $infolettre; ?></div>
 
-	<iframe src="./infolettre/inscription" frameborder="0" allowtransparency="true"></iframe>
+	<iframe src="./infolettre/inscription" allowtransparency="true"></iframe>
 
 	<div class="contact"><?php echo $contact; ?></div>
 
