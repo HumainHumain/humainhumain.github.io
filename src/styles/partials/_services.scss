@@ -184,6 +184,7 @@
 		transform: translate(-75%, -50%);
 		aspect-ratio: 1 / 1;
 		height: 70%;
+		max-height: 70vh;
 		border-radius: 50%;
 		box-sizing: border-box;
 		border: 0.5rem solid var(--border-color);
@@ -229,6 +230,7 @@
 		transform: translate(75%, -50%);
 		aspect-ratio: 1 / 1;
 		height: 70%;
+		max-height: 70vh;
 		border-radius: 50%;
 		box-sizing: border-box;
 		border: 0.5rem solid var(--border-color);
