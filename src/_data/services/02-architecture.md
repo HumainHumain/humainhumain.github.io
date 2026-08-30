@@ -2,7 +2,8 @@
 
 **L’ethnographie peut jouer le rôle d’une préconsultation en amont d’un projet de conception.**
 
-**Elle agit comme outil d’investigation des pratiques humaines pour les firmes d'architecture et d'urbanisme et comme vecteur d’inclusion sociale en créant du lien social sur le terrain.**
+**Elle agit comme outil d’investigation des pratiques humaines pour les firmes d'architecture et
+d'urbanisme et comme vecteur d’inclusion sociale en créant du lien social sur le terrain.**
 
 Cette proximité avec les collectivités locales permet de faire des recommandations et des propositions qui s’enracinent directement dans leur réalité.
 

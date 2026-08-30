@@ -9,6 +9,7 @@
     "terminal.integrated.env.linux": {
         "PATH": "${env:PATH}:${workspaceFolder}:${workspaceFolder}/node_modules/.bin"
     },
+    "editor.rulers": [100],
     "intelephense.environment.includePaths": [
         "node_modules/@kirigami/prepros"
     ],
