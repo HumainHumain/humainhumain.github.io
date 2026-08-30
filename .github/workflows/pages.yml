@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages (dist)
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -22,13 +22,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
 
-      - name: Set timezone to Montréal
-        uses: szenius/set-timezone@v2.0
-        with:
-          timezoneLinux: "America/Toronto"
-          timezoneMacos: "America/Toronto"
-          timezoneWindows: "Eastern Standard Time"
-
       - name: Checkout
         uses: actions/checkout@v7
         with:
@@ -43,10 +36,17 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Set timezone to Montréal
+        uses: szenius/set-timezone@v2.0
+        with:
+          timezoneLinux: "America/Toronto"
+          timezoneMacos: "America/Toronto"
+          timezoneWindows: "Eastern Standard Time"
+
       - name: Build and Export
         run: node --experimental-wasm-jspi ./node_modules/.bin/kiri export
 
-      - name: Upload artifact (dist)
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
           path: dist
