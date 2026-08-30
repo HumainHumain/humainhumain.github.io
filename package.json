@@ -4,6 +4,6 @@
     "esbuild@0.28.2": true
   },
   "dependencies": {
-    "@kirigami/kirigami": "^1.0.3"
+    "@kirigami/kirigami": "^1.0.4"
   }
 }

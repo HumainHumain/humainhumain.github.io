@@ -54,9 +54,6 @@ kirigami:
     - applied anthropology
     - ethnographic research firm
 
-export:
-  path: dist
-
 prepros:
   format: true
   includes:
