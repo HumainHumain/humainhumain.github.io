@@ -1,0 +1,6 @@
+git lfs install
+git lfs track "*.pdf"
+--> commit
+git lfs migrate import --include="*.pdf" --everything
+git push --force --all
+git lfs ls-files
