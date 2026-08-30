@@ -25,13 +25,14 @@
 				display: inline-block;
 				font-weight: 800;
 				transform: translateY(10%);
+				padding-left: 0.2rem;
 			}
 
 			input[type="email"] {
 				width: 16rem;
 				font-family: var(--font-family);
 				font-size: 0.8rem;
-				border: 0;
+				border: 0.1rem solid var(--color-grey);
 				padding: 0.2rem;
 				color: var(--color-grey);
 				-webkit-appearance: none;
@@ -47,9 +48,15 @@
 				border: none;
 				background-color: transparent;
 				cursor: pointer;
-				transform: translateY(20%);
+				transform: translateY(25%);
 				margin-left: 0.3rem;
+				transition: transform 100ms;
 			}
+
+			.paperplane:hover {
+				transform: translateY(25%) scale(1.2);
+			}
+
 			@media screen and (max-width: 767px) {
 				label{
 					font-size: 1.4rem;
@@ -61,7 +68,7 @@
 				}
 				.paperplane {
 					width: 1.8rem;
-					transform: translateY(30%);
+					/* transform: translateY(25%); */
 				}
 			}
 
