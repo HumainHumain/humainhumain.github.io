@@ -78,7 +78,7 @@
 		<form action="https://app.cyberimpact.com/optin" method="post" accept-charset="utf-8">
 			<div>
 				<label for="ci_email">Courriel :&nbsp;</label>
-				<input type="email" id="ci_email" name="ci_email" maxlength="255" required="" placeholder="mon@courriel.ca"/>
+				<input type="email" id="ci_email" name="ci_email" maxlength="255" required oninvalid="this.setCustomValidity('Vous devez entrer un courriel valide.')" placeholder="mon@courriel.ca"/>
 				<button type="submit" class="paperplane" title="S'inscrire"></button>
 			</div>
 			<div style="display:block; visibility:hidden; height:1px;">

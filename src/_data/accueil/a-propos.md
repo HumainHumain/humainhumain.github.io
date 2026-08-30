@@ -1,4 +1,4 @@
-## À propos
+## À proposs
 
 **Humain Humain** est une firme de consultation spécialisée en sciences sociales qui utilise les
 outils de l'ethnographie pour catalyser la transformation sociale et organisationnelle.
