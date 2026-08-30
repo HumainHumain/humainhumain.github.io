@@ -2,8 +2,5 @@
   "allowScripts": {
     "@parcel/watcher@2.6.0": true,
     "esbuild@0.28.2": true
-  },
-  "dependencies": {
-    "@kirigami/kirigami": "^1.0.4"
   }
 }
