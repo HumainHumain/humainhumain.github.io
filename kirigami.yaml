@@ -61,6 +61,13 @@ prepros:
   before: _layouts/header.php
   after:  _layouts/footer.php
 
+
+export:
+  mount:
+    - assets
+  jobs: ["test1", "test2"]
+
+
 tasks:
 
   - name:  js-core

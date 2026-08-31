@@ -3,12 +3,12 @@
  * @id             collaborations
  * @title          Collaborations
  * @breadcrumb     true
- * 
+ *
  * @schema         ../_data/collaborations/schema.json
  * @ogimage        ../images/collaborations/ogdefault.webp
  * @descshort      Nos partenaires et clients
  * @desclong       Découvrez les organisations publiques, municipales et communautaires avec qui Humain Humain a collaboré depuis 2019.
- * 
+ *
  * @collaborations ../_data/collaborations/collaborations.yaml
  */
 ?>
@@ -21,6 +21,6 @@
 	<?php foreach($collaborations as $collab): ?>
 		<a noopener noreferrer target="_blank" href="<?php echo $collab->url; ?>" title="<?php echo $collab->name; ?>">
 			<img src="../images/collaborations/<?php echo $collab->image; ?>" alt="<?php echo $collab->name; ?>" />
-		</a>	
+		</a>
 	<?php endforeach; ?>
 </section>
