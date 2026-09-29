@@ -12,8 +12,8 @@
     "export": "kiri export"
   },
   "devDependencies": {
-    "@kirigami/cli": "^0.1.2",
-    "@kirigami/kirigami": "^3.0.2"
+    "@kirigami/cli": "^0.1.4",
+    "@kirigami/kirigami": "^3.1.1"
   },
   "allowScripts": {
     "@parcel/watcher@2.6.0": true,

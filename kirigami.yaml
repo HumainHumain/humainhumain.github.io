@@ -84,6 +84,12 @@ sass:
 
 
 
+# What the client can edit in Kiri Studio. Every data file a page loads is
+# editable; the JSON-LD files are markup, not content.
+studio:
+  exclude:
+    - src/_data/*/schema.json
+
 tasks:
 
   - name:  js-core
