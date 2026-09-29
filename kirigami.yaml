@@ -87,6 +87,10 @@ sass:
 # What the client can edit in Kiri Studio. Every data file a page loads is
 # editable; the JSON-LD files are markup, not content.
 studio:
+  # Logos of the collaborations page (SVG): the folder the client adds to.
+  images: src/images/collaborations
+  # The reports linked from the publications page (PDF, kept in Git LFS).
+  files: src/publications/rapports
   exclude:
     - src/_data/*/schema.json
 
