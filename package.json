@@ -1,4 +1,20 @@
 {
+  "name": "humainhumain.github.io",
+  "private": true,
+  "engines": {
+    "node": ">=24.0.0",
+    "npm": ">=10.2.3"
+  },
+  "scripts": {
+    "serve": "kiri serve",
+    "build": "kiri build",
+    "watch": "kiri watch",
+    "export": "kiri export"
+  },
+  "devDependencies": {
+    "@kirigami/cli": "^0.1.2",
+    "@kirigami/kirigami": "^3.0.2"
+  },
   "allowScripts": {
     "@parcel/watcher@2.6.0": true,
     "esbuild@0.28.2": true

@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://cdn.jsdelivr.net/npm/@kirigami/kirigami/kirigami.schema.json
+
 kirigami:
   project:     Humain Humain
   baseurl:     https://humainhumain.com
@@ -11,16 +13,18 @@ kirigami:
   facebook:    https://www.facebook.com/humainhumainconsultation.ethnographie/
   area:        Québec, Canada
   gtag:        G-VYM8VW9PD0
-  
-  description: Humain Humain est une firme de consultation en sciences sociales qui utilise l'ethnographie pour accompagner la transformation sociale et organisationnelle.
-  
+
+  description:
+    Humain Humain est une firme de consultation en sciences sociales qui utilise
+    l'ethnographie pour accompagner la transformation sociale et organisationnelle.
+
   knowsabout:
     - Ethnographie
     - Recherche qualitative
     - Sciences sociales
     - Transformation organisationnelle
     - Consultation sociale
-  
+
   keywords:
     - ethnographie
     - consultation publique
@@ -54,26 +58,38 @@ kirigami:
     - applied anthropology
     - ethnographic research firm
 
+
 prepros:
   format: true
-  includes:
-    - _layouts/functions.php
+  head:   false   # the header layout already wires its own <head>, CSS and JS
+  network: true
+  # mountext: ['.webp']
+  includes: [_layouts/functions.php]
   before: _layouts/header.php
   after:  _layouts/footer.php
 
 
-export:
-  mount:
-    - assets
-  jobs: ["test1", "test2"]
+esbuild:
+#   minify: false
+
+sass:
+#   style: expanded
+
+
+# scripts:
+#   - name: test
+#     mount: ["src/images/**/*.webp"]
+#     trigger: before-build # before-build or before-export or after-export
+
+
 
 
 tasks:
 
   - name:  js-core
-    type:  js
+    type:  esbuild
     entry: scripts/hh.core.js
 
   - name:  scss-core
-    type:  scss
+    type:  sass
     entry: styles/hh.core.scss

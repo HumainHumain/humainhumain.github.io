@@ -1,7 +1,10 @@
 {
 	"recommendations": [
 		"ritwickdey.LiveServer",
-		"VisbyDev.folder-path-color"
+		"VisbyDev.folder-path-color",
+		"yzhang.markdown-all-in-one",
+		"bmewburn.vscode-intelephense-client",
+		"redhat.vscode-yaml"
 	],
 	"unwantedRecommendations": [
 		"glenn2223.live-sass",

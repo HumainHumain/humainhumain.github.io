@@ -1,4 +1,3 @@
-
 ({
 	init: async function() {
 		await documentReady();

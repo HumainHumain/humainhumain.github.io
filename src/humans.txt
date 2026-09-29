@@ -1,8 +1,9 @@
 /* TEAM */
-Développement : Maxime Larrivée-Roy
-Contact : mlarriveeroy@gmail.com
-Site : https://zmotrin.github.io
+
+    Maxime Larrivée-Roy
+    Contact: meralie@humainhumain.com
 
 /* SITE */
-Généré avec : Kirigami
-Hébergé sur : GitHub Pages
+
+    Last update: 2026-09-28
+    Software: Kirigami -- https://php-kirigami.github.io
