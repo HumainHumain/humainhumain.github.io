@@ -7,3 +7,5 @@ Fondée en 2019 par l'anthropologue *Méralie Murray-Hall*, qui accompagne depui
 les organisations publiques dans la compréhension des milieux sociaux, la firme s'appuie sur une
 approche de proximité et des méthodologies éprouvées et sensibles pour ancrer chaque mandat dans
 l'autoréflexion et la transformation organisationnelle.
+
+À propos
