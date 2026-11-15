@@ -1,6 +1,6 @@
 ## À propos
 
-**Humain Humain** est une firme de consultation spécialisée en sciences sociales qui utilise les
+**Humain Humain** est une firme de consultation en sciences sociales qui utilise les
 outils de l'ethnographie pour catalyser la transformation sociale et organisationnelle.
 
 Fondée en 2019 par l'anthropologue *Méralie Murray-Hall*, qui accompagne depuis près d'une décennie
